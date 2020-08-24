@@ -4,26 +4,29 @@
   
   
   <entry>
-    <title>我的第一篇博客文章</title>
-    <link href="/2020/08/23/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/"/>
-    <url>/2020/08/23/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/</url>
+    <title>01_博客注意事项</title>
+    <link href="/2020/08/23/01_%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/"/>
+    <url>/2020/08/23/01_%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/</url>
     
-    <content type="html"><![CDATA[]]></content>
-    
-    
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="/2020/08/23/hello-world/"/>
-    <url>/2020/08/23/hello-world/</url>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+    <content type="html"><![CDATA[<h1 id="Hexo-Blog-Tag"><a href="#Hexo-Blog-Tag" class="headerlink" title="Hexo Blog Tag"></a>Hexo Blog Tag</h1><h2 id="关于修改"><a href="#关于修改" class="headerlink" title="关于修改"></a>关于修改</h2><pre><code class="hljs bash">利用VScode打开 E:\1_Web前端\blog\<span class="hljs-built_in">source</span>\_data\fluid_config.yml 进行修改</code></pre><h2 id="关于保存"><a href="#关于保存" class="headerlink" title="关于保存"></a>关于保存</h2><pre><code class="hljs bash">打开Git Bashhexo g    hexo d    hexo s(启动本地服务器)</code></pre><h2 id="本地访问与编辑"><a href="#本地访问与编辑" class="headerlink" title="本地访问与编辑"></a>本地访问与编辑</h2><pre><code class="hljs bash">本地地址：http://localhost:4000在线编辑视窗：http://localhost:4000/admin （本地hexo博客地址 + admin即可）</code></pre><h6 id="相关网址："><a href="#相关网址：" class="headerlink" title="相关网址："></a>相关网址：</h6><p><a href="https://hexo.io/docs/">hexo官方文档</a><br><a href="https://hexo.fluid-dev.com/docs/guide/">fluid用户文档</a><br><a href="https://imgchr.com/">路过图床</a></p>]]></content>
     
     
+    <categories>
+      
+      <category>关于修改</category>
+      
+      <category>关于保存</category>
+      
+      <category>本地访问与编辑</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>hexo</tag>
+      
+    </tags>
     
   </entry>
   
