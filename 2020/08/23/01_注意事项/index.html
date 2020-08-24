@@ -251,17 +251,6 @@
             <div>
               <div class="post-metas mb-3">
                 
-                  <div class="post-meta mr-3">
-                    <i class="iconfont icon-category"></i>
-                    
-                      <a class="hover-with-bg" href="/categories/%E5%85%B3%E4%BA%8E%E4%BF%AE%E6%94%B9/">关于修改</a>
-                    
-                      <a class="hover-with-bg" href="/categories/%E5%85%B3%E4%BA%8E%E4%BF%AE%E6%94%B9/%E5%85%B3%E4%BA%8E%E4%BF%9D%E5%AD%98/">关于保存</a>
-                    
-                      <a class="hover-with-bg" href="/categories/%E5%85%B3%E4%BA%8E%E4%BF%AE%E6%94%B9/%E5%85%B3%E4%BA%8E%E4%BF%9D%E5%AD%98/%E6%9C%AC%E5%9C%B0%E8%AE%BF%E9%97%AE%E4%B8%8E%E7%BC%96%E8%BE%91/">本地访问与编辑</a>
-                    
-                  </div>
-                
                 
                   <div class="post-meta">
                     <i class="iconfont icon-tags"></i>
@@ -409,10 +398,16 @@
   <footer class="mt-5">
   <div class="text-center py-3">
     <div>
-      <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a>
-      <i class="iconfont icon-love"></i>
-      <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener">
-        <span>Fluid</span></a>
+      <p id="hitokoto" align="center">:D 获取中...</p>
+			<script>
+			  fetch('https://v1.hitokoto.cn')
+				.then(response => response.json())
+				.then(data => {
+				  const hitokoto = document.getElementById('hitokoto')
+				  hitokoto.innerText = data.hitokoto
+				  })
+				  .catch(console.error)
+			</script>
     </div>
     
 

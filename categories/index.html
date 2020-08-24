@@ -189,100 +189,6 @@
   
   
   
-    
-    
-    <div class="category row">
-      <a
-        class="category-item  list-group-item category-item-action col-10 col-md-11"
-        id="heading-cke82s49s000058vp4wwx3y3l" role="tab" data-toggle="collapse" href="#collapse-cke82s49s000058vp4wwx3y3l"
-        aria-expanded="true"
-      >
-        关于修改
-        <i class="iconfont icon-arrowright"></i>
-      </a>
-      <a href="/categories/%E5%85%B3%E4%BA%8E%E4%BF%AE%E6%94%B9/" class="category-count col-2 col-md-1">
-        <i class="iconfont icon-articles"></i>
-        <span>1</span>
-      </a>
-      <div class="category-collapse">
-        
-          
-  <div id="collapse-cke82s49s000058vp4wwx3y3l" class="collapse in show" role="tabpanel"
-       aria-labelledby="heading-cke82s49s000058vp4wwx3y3l">
-    
-  
-  
-    
-    
-    <div class="category-sub row">
-      <a
-        class="category-subitem  list-group-item category-item-action col-10 col-md-11"
-        id="heading-cke82s49u000158vpgjyjdlaf" role="tab" data-toggle="collapse" href="#collapse-cke82s49u000158vpgjyjdlaf"
-        aria-expanded="true"
-      >
-        关于保存
-        <i class="iconfont icon-arrowright"></i>
-      </a>
-      <a href="/categories/%E5%85%B3%E4%BA%8E%E4%BF%AE%E6%94%B9/%E5%85%B3%E4%BA%8E%E4%BF%9D%E5%AD%98/" class="category-count col-2 col-md-1">
-        <i class="iconfont icon-articles"></i>
-        <span>1</span>
-      </a>
-      <div class="category-collapse">
-        
-          
-  <div id="collapse-cke82s49u000158vpgjyjdlaf" class="collapse in show" role="tabpanel"
-       aria-labelledby="heading-cke82s49u000158vpgjyjdlaf">
-    
-  
-  
-    
-    
-    <div class="category-sub row">
-      <a
-        class="category-subitem collapsed list-group-item category-item-action col-10 col-md-11"
-        id="heading-cke82sb1z000458vp7a77h90r" role="tab" data-toggle="collapse" href="#collapse-cke82sb1z000458vp7a77h90r"
-        aria-expanded="false"
-      >
-        本地访问与编辑
-        <i class="iconfont icon-arrowright"></i>
-      </a>
-      <a href="/categories/%E5%85%B3%E4%BA%8E%E4%BF%AE%E6%94%B9/%E5%85%B3%E4%BA%8E%E4%BF%9D%E5%AD%98/%E6%9C%AC%E5%9C%B0%E8%AE%BF%E9%97%AE%E4%B8%8E%E7%BC%96%E8%BE%91/" class="category-count col-2 col-md-1">
-        <i class="iconfont icon-articles"></i>
-        <span>1</span>
-      </a>
-      <div class="category-collapse">
-        
-          
-  <div id="collapse-cke82sb1z000458vp7a77h90r" class="collapse in" role="tabpanel"
-       aria-labelledby="heading-cke82sb1z000458vp7a77h90r">
-    
-    
-    
-      
-      
-        <a href="/2020/08/23/01_%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/" class="list-group-item list-group-item-action">
-          <span class="category-post">01_博客注意事项</span>
-        </a>
-      
-    
-  </div>
-
-        
-      </div>
-    </div>
-  
-  </div>
-
-        
-      </div>
-    </div>
-  
-  </div>
-
-        
-      </div>
-    </div>
-  
 </div>
 
               </div>
@@ -353,10 +259,16 @@
   <footer class="mt-5">
   <div class="text-center py-3">
     <div>
-      <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a>
-      <i class="iconfont icon-love"></i>
-      <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener">
-        <span>Fluid</span></a>
+      <p id="hitokoto" align="center">:D 获取中...</p>
+			<script>
+			  fetch('https://v1.hitokoto.cn')
+				.then(response => response.json())
+				.then(data => {
+				  const hitokoto = document.getElementById('hitokoto')
+				  hitokoto.innerText = data.hitokoto
+				  })
+				  .catch(console.error)
+			</script>
     </div>
     
 

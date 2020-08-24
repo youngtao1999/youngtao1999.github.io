@@ -11,16 +11,6 @@
     <content type="html"><![CDATA[<h1 id="Hexo-Blog-Tag"><a href="#Hexo-Blog-Tag" class="headerlink" title="Hexo Blog Tag"></a>Hexo Blog Tag</h1><h2 id="关于修改"><a href="#关于修改" class="headerlink" title="关于修改"></a>关于修改</h2><pre><code class="hljs bash">利用VScode打开 E:\1_Web前端\blog\<span class="hljs-built_in">source</span>\_data\fluid_config.yml 进行修改</code></pre><h2 id="关于保存"><a href="#关于保存" class="headerlink" title="关于保存"></a>关于保存</h2><pre><code class="hljs bash">打开Git Bashhexo g    hexo d    hexo s(启动本地服务器)</code></pre><h2 id="本地访问与编辑"><a href="#本地访问与编辑" class="headerlink" title="本地访问与编辑"></a>本地访问与编辑</h2><pre><code class="hljs bash">本地地址：http://localhost:4000在线编辑视窗：http://localhost:4000/admin （本地hexo博客地址 + admin即可）</code></pre><h6 id="相关网址："><a href="#相关网址：" class="headerlink" title="相关网址："></a>相关网址：</h6><p><a href="https://hexo.io/docs/">hexo官方文档</a><br><a href="https://hexo.fluid-dev.com/docs/">fluid用户文档</a><br><a href="https://imgchr.com/">路过图床</a></p>]]></content>
     
     
-    <categories>
-      
-      <category>关于修改</category>
-      
-      <category>关于保存</category>
-      
-      <category>本地访问与编辑</category>
-      
-    </categories>
-    
     
     <tags>
       
