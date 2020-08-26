@@ -1,0 +1,883 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="https://s1.ax1x.com/2020/08/23/dBenrd.jpg">
+  <link rel="icon" type="image/png" href="https://s1.ax1x.com/2020/08/23/dBenrd.jpg">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="John Doe">
+  <meta name="keywords" content="">
+  <title>基本语法_js - Young</title>
+
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/github-markdown-css/4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    <link  rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/10.0.0/styles/github-gist.min.css" />
+  
+
+  
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_6peoq002giu.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_pjno9b9zyxs.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.1.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>Young</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/links/">
+                <i class="iconfont icon-link-fill"></i>
+                友链
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner intro-2" id="background" parallax=true
+         style="background: url('https://s1.ax1x.com/2020/08/23/dBCSu6.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="container page-header text-center fade-in-up">
+            <span class="h2" id="subtitle">
+              
+            </span>
+
+            
+              
+  <div class="mt-3 post-meta">
+    <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+    <time datetime="2020-08-25 18:52" pubdate>
+      2020年8月25日 晚上
+    </time>
+  </div>
+
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      1.9k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      22
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-md">
+      <div class="container nopadding-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto" id="post">
+            <!-- SEO header -->
+            <h1 style="display: none">基本语法_js</h1>
+            
+              <p class="note note-info">
+                
+                  本文最后更新于：2020年8月26日 下午
+                
+              </p>
+            
+            <div class="markdown-body" id="post-body">
+              <h1 id="JS基本语法"><a href="#JS基本语法" class="headerlink" title="JS基本语法"></a>JS基本语法</h1><h2 id="1-输入输出"><a href="#1-输入输出" class="headerlink" title="1.输入输出"></a>1.输入输出</h2><ul>
+<li>输入：  <pre><code class="hljs awk">prompt();	<span class="hljs-regexp">//</span>字符串输入  
++prompt();	<span class="hljs-regexp">//</span>数字输入</code></pre></li>
+<li>输出：  <pre><code class="hljs awk">alert();	<span class="hljs-regexp">//</span>警告框输出
+document.write();	<span class="hljs-regexp">//</span>body中输出
+console.log();	<span class="hljs-regexp">//</span>控制台输出</code></pre>
+
+</li>
+</ul>
+<h2 id="2-数据类型与转换"><a href="#2-数据类型与转换" class="headerlink" title="2.数据类型与转换"></a>2.数据类型与转换</h2><p>可以通过<code>typeof + 变量名</code>检查变量的数据类型</p>
+<ul>
+<li>String 字符串  <table>
+<thead>
+<tr>
+<th align="left">说明</th>
+<th align="left">用单引号或双引号引起来，但不能混用，不能同一嵌套</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">特殊符号</td>
+<td align="left">&quot; = “</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">&#39; = ‘</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">\n = 换行</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">\t = 制表符</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">\ = \</td>
+</tr>
+<tr>
+<td align="left">强制类型转换</td>
+<td align="left">toString()方法：<code>a = a.toString();</code></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">String()函数：<code>a = String(a);</code></td>
+</tr>
+</tbody></table>
+</li>
+</ul>
+<ul>
+<li><p>Number 数值  </p>
+<table>
+<thead>
+<tr>
+<th align="left">说明</th>
+<th align="left">js中所有数值都为Number类型，包括整数和浮点数</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">强制类型转换</td>
+<td align="left">Number()函数：<code> a = Number(a);</code></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">String()函数：<code>a = String(a);</code></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">parseInt()函数，转为整数：<code>a = parseInt(a);</code></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">parseFloat()函数，转为整数：<code>a = parseFloat(a);</code></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">true = 1, false = 0, Null = 0，undefined = NaN</td>
+</tr>
+<tr>
+<td align="left">其他进制</td>
+<td align="left">以0x开头表示16进制数字</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">以0开头为8进制数字</td>
+</tr>
+</tbody></table>
+</li>
+<li><p>Boolean 布尔值  </p>
+<table>
+<thead>
+<tr>
+<th align="left">说明</th>
+<th align="left">布尔值表示逻辑判断,true 表示真,false 表示假</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">Boolean()函数类型转换</td>
+<td align="left">Number 除了 0 和 NaN ，其他都为true</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">String 除了空串，其他都是true</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">Null 和 Undefined 都是false</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">Object 转换为true</td>
+</tr>
+</tbody></table>
+</li>
+<li><p>Null 空值  </p>
+<blockquote>
+<p>Null类型的值就只有一个，就是null,表示第一个空对象,typeof检查null时，会返回object</p>
+</blockquote>
+</li>
+<li><p>Undefined 未定义</p>
+<blockquote>
+<p>Undefined(未定义) 类型的值只有一个，就是undefind,当声明一个变量，但并不给变量赋值是，它的值就是undefined,typeof检查undefined，会返回undefined</p>
+</blockquote>
+</li>
+<li><p>Object 对象  </p>
+</li>
+</ul>
+<h2 id="3-运算符"><a href="#3-运算符" class="headerlink" title="3.运算符"></a>3.运算符</h2><ul>
+<li><p>一元运算符  </p>
+<blockquote>
+<p>自增：自身基础上增加1 ,自增后，值立即自增1,分为两种：a++ 和 ++a</p>
+<pre><code>  var a = 1;
+  a++ = 1;
+  ++a = 2;    //a++ 和 ++a 的值不同
+  a = 2;  </code></pre>
+<p>自减同上</p>
+</blockquote>
+</li>
+<li><p>逻辑运算符  </p>
+<ul>
+<li><p>!非：  </p>
+<blockquote>
+<p>一个值进行非运算 对一个布尔值进行取反操作，true –&gt; flase</p>
+</blockquote>
+</li>
+<li><p>&amp;&amp;与：  </p>
+<blockquote>
+<p> &amp;&amp;与：可以对符号两侧的值进行与运算；<br>只有两端的值都为true时，才会返回true。只要有一个false就会返回false；<br>与是一个短路的与，如果第一个值是false，则不再检查第二个值；<br>对于非布尔值，它会将其转换为布尔值然后做运算，并返回原值；<br>规则：<br>1.第一个值为false，则返回第一个值；<br>2.如果第一个值为true，则返回第二个值。 </p>
+</blockquote>
+</li>
+<li><p>||或：  </p>
+<blockquote>
+<p> 可以对符号两侧的值进行或运算；<br>只有两端都是false时，才会返回false。只要有一个true，就会返回true；<br>或是一个短路的或，如果第一个值是true，则不再检查第二个值；<br>对于非布尔值，它会将其转换为布尔值然后做运算，并返回原值；<br>规则：<br>1.如果第一个值为true，则返回第一个值；<br>2.如果第一个值为false，则返回第二个值。  </p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li><p>赋值运算符  </p>
+<table>
+<thead>
+<tr>
+<th align="left">赋值运算符</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">=</td>
+<td align="left">可以将符号右侧的值赋值给左侧变量</td>
+</tr>
+<tr>
+<td align="left">+=</td>
+<td align="left">a += 5; 相当于 a = a+5; 可连接字符串</td>
+</tr>
+<tr>
+<td align="left">-=</td>
+<td align="left">a -= 5  相当于 a = a-5</td>
+</tr>
+<tr>
+<td align="left">其他类似</td>
+<td align="left">……</td>
+</tr>
+</tbody></table>
+</li>
+<li><p>关系运算符  </p>
+<table>
+<thead>
+<tr>
+<th align="left"></th>
+<th align="left">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">符号</td>
+<td align="left">&gt; &lt; &gt;= &lt;=</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">比较两个值之间的关系，如果关系成立则返回true，关系不成立则返回false。</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">如果比较的两个值是非数值，会将其转换为Number然后再比较。</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">如果比较的两个值都是字符串，此时会比较字符串的Unicode编码，而不会转换为Number。</td>
+</tr>
+</tbody></table>
+</li>
+<li><p>相等运算符  </p>
+<table>
+<thead>
+<tr>
+<th align="left">符号</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">==</td>
+<td align="left">相等，判断左右两个值是否相等，如果相等返回true，如果不等返回false (相等会自动对两个值进行类型转换，如果对不同的类型进行比较，会将其转换为相同的类型然后再比较，转换后相等它也会返回true。)</td>
+</tr>
+<tr>
+<td align="left">!=</td>
+<td align="left">不等，判断左右两个值是否不等，如果不等则返回true，如果相等则返回false (不等也会做自动的类型转换。)</td>
+</tr>
+<tr>
+<td align="left">===</td>
+<td align="left">全等，判断左右两个值是否全等，它和相等类似，只不过它不会进行自动的类型转换 (如果两个值的类型不同，则直接返回false)</td>
+</tr>
+<tr>
+<td align="left">!==</td>
+<td align="left">不全等，和不等类似，但是它不会进行自动的类型转换，如果两个值的类型不同，它会直接返回true</td>
+</tr>
+<tr>
+<td align="left">特殊的值</td>
+<td align="left">由于undefined衍生自null，所以null == undefined 会返回true。但是 null === undefined 会返回false。</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">NaN不与任何值相等，报告它自身 NaN == NaN 返回false</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">判断一个值是否是NaN，使用isNaN()函数</td>
+</tr>
+</tbody></table>
+</li>
+<li><p>三元运算符 ?  </p>
+<blockquote>
+<p>语法：条件表达式?语句1:语句2;<br>  执行流程：</p>
+<blockquote>
+<p>先对条件表达式求值判断;<br>   如果判断结果为true，则执行语句1，并返回执行结果<br>   如果判断结果为false，则执行语句2，并返回执行结果  </p>
+</blockquote>
+</blockquote>
+</li>
+<li><p>运算符优先级  </p>
+<blockquote>
+<p>和数学中一样，JS中的运算符也是具有优先级的，比如 先乘除 后加减 先与 后或;<br>  具体的优先级可以参考优先级的表格，在表格中越靠上的优先级越高，<br>  优先级越高的越优先计算，优先级相同的，从左往右计算。<br>  优先级不需要记忆，如果越到拿不准的，使用()来改变优先级。  </p>
+</blockquote>
+</li>
+</ul>
+<h2 id="4-流程控制语句"><a href="#4-流程控制语句" class="headerlink" title="4.流程控制语句"></a>4.流程控制语句</h2><p>程序都是自上向下的顺序执行的，通过流程控制语句可以改变程序执行的顺序，或者反复的执行某一段的程序。  </p>
+<ul>
+<li>if（条件判断语句） <pre><code class="hljs lasso"><span class="hljs-keyword">if</span>(条件表达式)&#123;
+      语句<span class="hljs-params">...</span>
+  	&#125;<span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(条件表达式)&#123;
+      语句<span class="hljs-params">...</span>
+  	&#125;<span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(条件表达式)&#123;
+      语句<span class="hljs-params">...</span>
+  	&#125;<span class="hljs-keyword">else</span>&#123;
+      语句<span class="hljs-params">...</span>
+  	&#125;	<span class="hljs-comment">//自上到下判断</span></code></pre></li>
+<li>switch（条件分支语句）  <pre><code class="hljs autoit"><span class="hljs-keyword">switch</span>(条件表达式)&#123;
+      <span class="hljs-keyword">case</span> 表达式:
+          语句...
+          <span class="hljs-built_in">break</span><span class="hljs-comment">;</span>
+      <span class="hljs-keyword">case</span> 表达式:
+          语句...
+          <span class="hljs-built_in">break</span><span class="hljs-comment">;</span>
+      <span class="hljs-keyword">default</span>:
+          语句...
+          <span class="hljs-built_in">break</span><span class="hljs-comment">;</span>
+  	&#125;	//依次将 <span class="hljs-keyword">case</span>后的表达式的值 和 <span class="hljs-keyword">switch</span>后的表达式的值 进行 全等比较</code></pre></li>
+<li>while 循环  <pre><code class="hljs stylus"><span class="hljs-function"><span class="hljs-title">while</span><span class="hljs-params">(条件表达式)</span></span>&#123;
+	语句...
+	&#125;	<span class="hljs-comment">//先判断再循环</span></code></pre></li>
+<li>do while 循环  <pre><code class="hljs awk"><span class="hljs-keyword">do</span>&#123;
+ 语句...
+&#125;<span class="hljs-keyword">while</span>(条件表达式)	<span class="hljs-regexp">//</span>先判断再循环，至少循环一次</code></pre></li>
+<li>for 循环  <pre><code class="hljs stylus"><span class="hljs-function"><span class="hljs-title">for</span><span class="hljs-params">(①初始化表达式 ; ②条件表达式 ; ④更新表达式)</span></span>&#123;
+ 	③语句...
+&#125;	<span class="hljs-comment">//①--&gt;②--&gt;③--&gt;④</span></code></pre></li>
+<li>break 与 continue  <blockquote>
+<p>break可以用来退出switch或循环语句<br>continue可以跳过当次循环<br>不能再if语句中使用  </p>
+</blockquote>
+</li>
+</ul>
+<h2 id="5-小练习"><a href="#5-小练习" class="headerlink" title="5.小练习"></a>5.小练习</h2><ul>
+<li>水仙花数  <blockquote>
+<p>水仙花数是指一个3位数，它的每个位上的数字的3 次幂之和等于它本身。请打印所有的水仙花数。（例如：1^3 + 5^3 + 3^3 = 153）  </p>
+</blockquote>
+<pre><code class="hljs bash">var i,a,b,c;
+<span class="hljs-keyword">for</span>(i = 100;i &lt;= 999;i++) &#123;
+	a = parseInt(i/100);	//得到百位数a
+	b = parseInt(i%100/10);	//得到十位数b
+		c = i%10;	//得到个位数c
+	<span class="hljs-keyword">if</span>(i == a*a*a + b*b*b + c*c*c) &#123;
+	document.write(i+<span class="hljs-string">&quot;&lt;br/&gt;&quot;</span>);
+     &#125;
+&#125;</code></pre></li>
+<li>九九乘法表<pre><code class="hljs matlab">var <span class="hljs-built_in">i</span>,<span class="hljs-built_in">j</span>;
+<span class="hljs-keyword">for</span>(<span class="hljs-built_in">i</span> = <span class="hljs-number">1</span>;<span class="hljs-built_in">i</span> &lt;= <span class="hljs-number">9</span>;<span class="hljs-built_in">i</span>++) &#123;
+	<span class="hljs-keyword">for</span>( <span class="hljs-built_in">j</span> = <span class="hljs-number">1</span>;<span class="hljs-built_in">j</span> &lt;= <span class="hljs-built_in">i</span>;<span class="hljs-built_in">j</span>++) &#123;
+		document.write(<span class="hljs-built_in">j</span> +<span class="hljs-string">&quot;*&quot;</span>+ <span class="hljs-built_in">i</span> +<span class="hljs-string">&quot;=&quot;</span>+ <span class="hljs-built_in">i</span>*<span class="hljs-built_in">j</span> +<span class="hljs-string">&quot;&amp;nbsp;&amp;nbsp;&amp;nbsp;&quot;</span>);
+	&#125;
+	document.write(<span class="hljs-string">&quot;&lt;br/&gt;&quot;</span>);
+&#125;</code></pre></li>
+<li>质数  <blockquote>
+<p>打印出1-100间所有的质数</p>
+</blockquote>
+<pre><code>var i,j;
+for(i = 2;i &lt;= 100;i++) &#123;
+  var flag = true;
+  for(j = 2;j &lt;= Math.sqrt(i);j++) &#123;    //j最大值去根号下i
+      if(i % j == 0) &#123;
+      flag = false;
+      break;    //break优化
+      &#125;
+  &#125;
+  if(flag == true) &#123;
+  document.write(i+&quot;&lt;br/&gt;&quot;);
+  &#125;
+&#125;</code></pre>
+</li>
+</ul>
+<h2 id="6-小结"><a href="#6-小结" class="headerlink" title="6.小结"></a>6.小结</h2><p>前面学习的还是太慢了，记录的时候也不知道是详细一些好还是简单一些，就随便记了一下。算是了解一下如何写博客，希望自己能够养成学习的同时记录博客的好习惯。</p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/js/">js</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！</p>
+              
+              
+                <div class="post-prevnext row">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2020/08/23/Blog%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/">
+                        <span class="hidden-mobile">博客_note</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments">
+                
+                
+  <div id="vcomments"></div>
+  <script type="text/javascript">
+    function loadValine() {
+      addScript('https://cdn.staticfile.org/valine/1.4.14/Valine.min.js', function () {
+        new Valine({
+          el: "#vcomments",
+          app_id: "ItTz5CmSfVYAUpeodYMrgK9m-gzGzoHsz",
+          app_key: "51hdlsDw8WeO4UJw4rvQPahs",
+          placeholder: "夸夸我吧",
+          path: window.location.pathname,
+          avatar: "retro",
+          meta: ["nick","mail","link"],
+          pageSize: "10",
+          lang: "zh-CN",
+          highlight: false,
+          recordIP: false,
+          serverURLs: "",
+        });
+      });
+    }
+    waitElementVisible('vcomments', loadValine);
+  </script>
+  <noscript>Please enable JavaScript to view the <a target="_blank" href="https://valine.js.org" rel="nofollow noopener noopener">comments
+      powered by Valine.</a></noscript>
+
+
+              </article>
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div id="tocbot"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+  <div class="col-lg-7 mx-auto nopadding-md">
+    <div class="container custom post-content mx-auto">
+      <img src="https://octodex.github.com/images/jetpacktocat.png" srcset="/img/loading.gif" class="rounded mx-auto d-block mt-5" style="width:150px; height:150px;">
+    </div>
+  </div>
+
+
+    
+  </main>
+
+  
+    <a id="scroll-top-button" href="#" role="button">
+      <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+    </a>
+  
+
+  
+    <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+  
+    <!-- APlayer 音乐播放器 -->
+    <div id="aplayer"></div>
+    <script defer src="https://cdn.staticfile.org/aplayer/1.10.1/APlayer.min.js" ></script>
+<link  rel="stylesheet" href="https://cdn.staticfile.org/aplayer/1.10.1/APlayer.min.css" />
+<script type="text/javascript">
+  var oldLoadAp = window.onload;
+  window.onload = function () {
+    oldLoadAp && oldLoadAp();
+
+    new APlayer({
+      container: document.getElementById('aplayer'),
+      fixed: true,
+      autoplay: 'false' === 'true',
+      loop: 'all',
+      order: 'random',
+      theme: '#b7daff',
+      preload: 'none',
+      audio: [{"name":"你离开了南京，从此没有人和我说话","artist":"B","url":"/songs/B.mp3","cover":"https://s1.ax1x.com/2020/08/24/dDt0pQ.jpg"}]
+    });
+  }
+</script>
+
+  
+
+  
+
+  <footer class="mt-5">
+  <div class="text-center py-3">
+    <div>
+      <p id="hitokoto" align="center">:D 获取中...</p>
+			<script>
+			  fetch('https://v1.hitokoto.cn')
+				.then(response => response.json())
+				.then(data => {
+				  const hitokoto = document.getElementById('hitokoto')
+				  hitokoto.innerText = data.hitokoto
+				  })
+				  .catch(console.error)
+			</script>
+    </div>
+    
+
+    
+
+    
+  </div>
+</footer>
+
+<!-- SCRIPTS -->
+<script  src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js" ></script>
+<script  src="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/main.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/lazyload.js" ></script>
+  
+
+
+
+  <script defer src="https://cdn.staticfile.org/clipboard.js/2.0.6/clipboard.min.js" ></script>
+  <script  src="/js/clipboard-use.js" ></script>
+
+
+
+
+
+
+
+  <script  src="https://cdn.staticfile.org/tocbot/4.11.1/tocbot.min.js" ></script>
+  <script>
+    $(document).ready(function () {
+      var boardCtn = $('#board-ctn');
+      var boardTop = boardCtn.offset().top;
+
+      tocbot.init({
+        tocSelector: '#tocbot',
+        contentSelector: '#post-body',
+        headingSelector: 'h1,h2,h3,h4,h5,h6',
+        linkClass: 'tocbot-link',
+        activeLinkClass: 'tocbot-active-link',
+        listClass: 'tocbot-list',
+        isCollapsedClass: 'tocbot-is-collapsed',
+        collapsibleClass: 'tocbot-is-collapsible',
+        collapseDepth: 0,
+        scrollSmooth: true,
+        headingsOffset: -boardTop
+      });
+      if ($('.toc-list-item').length > 0) {
+        $('#toc').css('visibility', 'visible');
+      }
+    });
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/typed.js/2.0.11/typed.min.js" ></script>
+  <script>
+    var typed = new Typed('#subtitle', {
+      strings: [
+        '  ',
+        "基本语法_js&nbsp;",
+      ],
+      cursorChar: "_",
+      typeSpeed: 70,
+      loop: false,
+    });
+    typed.stop();
+    $(document).ready(function () {
+      $(".typed-cursor").addClass("h2");
+      typed.start();
+    });
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/anchor-js/4.2.2/anchor.min.js" ></script>
+  <script>
+    anchors.options = {
+      placement: "right",
+      visible: "hover",
+      
+    };
+    var el = "h1,h2,h3,h4,h5,h6".split(",");
+    var res = [];
+    for (item of el) {
+      res.push(".markdown-body > " + item)
+    }
+    anchors.add(res.join(", "))
+  </script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    var path = "/local-search.xml";
+    var inputArea = document.querySelector("#local-search-input");
+    inputArea.onclick = function () {
+      searchFunc(path, 'local-search-input', 'local-search-result');
+      this.onclick = null
+    }
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+  <script>
+    $('#post img:not(.no-zoom img, img[no-zoom]), img[zoom]').each(
+      function () {
+        var element = document.createElement('a');
+        $(element).attr('data-fancybox', 'images');
+        $(element).attr('href', $(this).attr('src'));
+        $(this).wrap(element);
+      }
+    );
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
