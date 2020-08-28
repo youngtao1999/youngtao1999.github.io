@@ -4,6 +4,19 @@
   
   
   <entry>
+    <title>Object类型_js</title>
+    <link href="/2020/08/28/Object%E7%B1%BB%E5%9E%8B-js/"/>
+    <url>/2020/08/28/Object%E7%B1%BB%E5%9E%8B-js/</url>
+    
+    <content type="html"><![CDATA[<h1 id="Object-类型"><a href="#Object-类型" class="headerlink" title="Object 类型"></a>Object 类型</h1><h2 id="1-对象说明"><a href="#1-对象说明" class="headerlink" title="1.对象说明"></a>1.对象说明</h2><ul><li>对象属于一种复合的数据类型，在对象中可以保存多个不同数据类型的属性<br>对象的分类：  <blockquote><p>1.内建对象: 由ES标准中定义的对象，在任何的ES的实现中都可以使用（比如：Math String Number Boolean Function Object）；<br>2.宿主对象: 由JS的运行环境提供的对象，目前来讲主要指由浏览器提供的对象(比如 BOM DOM)；<br>3.自定义对象: 由开发人员自己创建的对象。  </p></blockquote></li></ul><h2 id="2-创建对象"><a href="#2-创建对象" class="headerlink" title="2.创建对象"></a>2.创建对象</h2><ul><li><p>使用new创建： <code>var obj = new Object();</code>  </p></li><li><p>使用对象字面量创建：<code>var obj = &#123;&#125;;</code>  </p><blockquote><p>使用对象字面量，可以在创建对象时，直接指定对象中的属性<br>语法：  </p></blockquote><pre><code>var obj = &#123;    name:&quot;卡卡罗特&quot;,    gender:&quot;男&quot;,    age:99,    &quot;energy&quot;:3000,    //属性名引号可加可不加，建议不加，如需使用特殊名字，则必须加    test:&#123;name:&quot;贝吉塔&quot;&#125;    //最后一个属性不写 ,&#125;;  </code></pre></li></ul><h2 id="3-添加属性"><a href="#3-添加属性" class="headerlink" title="3.添加属性"></a>3.添加属性</h2><ul><li>尽量按照标识符的规范   <pre><code>var obj = new Object();obj.name = &quot;杨涛&quot;;</code></pre></li><li>使用特殊的属性名  <blockquote><p>对象[“属性名”] = 属性值; （ []中可以加变量）<br><code>obj[&quot;123&quot;] = 789;</code>  </p></blockquote></li></ul><h2 id="4-修改与删除属性"><a href="#4-修改与删除属性" class="headerlink" title="4.修改与删除属性"></a>4.修改与删除属性</h2><ul><li>修改属性  <blockquote><p>语法：对象.属性名 = 新值;<br><code>var obj = &#123;name:&quot;卡卡罗特&quot;&#125;;</code><br><code>obj.name = &quot;孙悟空&quot;;</code>  </p></blockquote></li><li>删除属性  <blockquote><p>语法：delete 对象.属性名<br><code>delete obj.name;</code>  </p></blockquote></li></ul><h2 id="5-保存位置"><a href="#5-保存位置" class="headerlink" title="5.保存位置"></a>5.保存位置</h2><blockquote><p><strong>基本数据类型的值直接在 栈内存 中存储</strong>，值与值之间是独立存在的，修改一个变量不会影响其他的变量  </p></blockquote><blockquote><p><strong>对象是保存到 堆内存 中的</strong>，每创建一个新的对象，就会在堆内存中开辟一个新的空间，而变量保存的是对象的内存地址(对象的引用),如果两个变量保存的是同一个对象引用，当一个通过变量修改属性时，另一个变量也会受到影响。</p></blockquote><blockquote><p>当比较两个基本数据类型的值时，就是比较值;<br>而比较两个引用数据类型时，它是比较对象的内存地址;<br>如果两个对象是一模一样，但是地址不同，也会返回false。<br><code>var a = 10, b = 10;    // a == b</code><br><code>obj1.name = &quot;卡卡罗特&quot;;obj2.name = &quot;卡卡罗特&quot;;    // obj1 != obj2</code></p></blockquote>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>基本语法_js</title>
     <link href="/2020/08/25/%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95-js/"/>
     <url>/2020/08/25/%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95-js/</url>
