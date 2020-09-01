@@ -1,0 +1,819 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="https://s1.ax1x.com/2020/08/28/do2e0K.png">
+  <link rel="icon" type="image/png" href="https://s1.ax1x.com/2020/08/28/do2e0K.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="John Doe">
+  <meta name="keywords" content="">
+  <title>函数与对象_js - Young</title>
+
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/github-markdown-css/4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    <link  rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/10.0.0/styles/github-gist.min.css" />
+  
+
+  
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_6peoq002giu.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_pjno9b9zyxs.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.1.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>Young</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/links/">
+                <i class="iconfont icon-link-fill"></i>
+                友链
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner intro-2" id="background" parallax=true
+         style="background: url('https://s1.ax1x.com/2020/08/23/dBCSu6.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="container page-header text-center fade-in-up">
+            <span class="h2" id="subtitle">
+              
+            </span>
+
+            
+              
+  <div class="mt-3 post-meta">
+    <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+    <time datetime="2020-09-01 10:53" pubdate>
+      2020年9月1日 上午
+    </time>
+  </div>
+
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      3.4k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      39
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-md">
+      <div class="container nopadding-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto" id="post">
+            <!-- SEO header -->
+            <h1 style="display: none">函数与对象_js</h1>
+            
+              <p class="note note-info">
+                
+                  本文最后更新于：2020年9月1日 下午
+                
+              </p>
+            
+            <div class="markdown-body" id="post-body">
+              <h1 id="函数与对象"><a href="#函数与对象" class="headerlink" title="函数与对象"></a>函数与对象</h1><p>&emsp;函数 function<br>&emsp;函数也是一个对象<br>&emsp;函数中可以封装一些功能（代码），在需要时可以执行这些功能(代码)<br>&emsp;函数中可以保存一些代码在需要的时候调用<br>&emsp;使用typeof检查一个函数对象时，会返回function  </p>
+<h2 id="1-创建函数"><a href="#1-创建函数" class="headerlink" title="1.创建函数"></a>1.创建函数</h2><ul>
+<li>使用<strong>构造函数</strong>创建  <blockquote>
+<p>实际开发中很少使用构造函数来创建一个函数对象  </p>
+</blockquote>
+<pre><code class="hljs kotlin"><span class="hljs-keyword">var</span> <span class="hljs-function"><span class="hljs-keyword">fun</span> = new <span class="hljs-title">Function</span><span class="hljs-params">(<span class="hljs-string">&quot;console.log(&#x27;这是我的第一个函数&#x27;)&quot;</span>)</span></span>;
+	<span class="hljs-comment">//可以将要封装的代码以字符串的形式传递给构造函数</span>
+	<span class="hljs-comment">//封装到函数中的代码不会立即执行</span>
+	<span class="hljs-comment">//函数中的代码会在函数调用的时候执行</span>
+<span class="hljs-function"><span class="hljs-title">fun</span><span class="hljs-params">()</span></span>;	<span class="hljs-comment">//调用fun</span></code></pre></li>
+<li>使用<strong>函数声明</strong>来创建一个函数  <blockquote>
+<p>语法：function 函数名([形参1，形参2…形参N]) {<br>语句…;语句…;<br>}  </p>
+</blockquote>
+<pre><code class="hljs javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">fun2</span>(<span class="hljs-params"></span>) </span>&#123;
+	<span class="hljs-built_in">console</span>.log(<span class="hljs-string">&#x27;这是我的第二个函数&#x27;</span>);
+	alert(<span class="hljs-string">&quot;哈哈哈哈哈&quot;</span>);
+	<span class="hljs-built_in">document</span>.write(<span class="hljs-string">&quot;┭┮﹏┭┮&quot;</span>);
+&#125;    
+fun2();	<span class="hljs-comment">//调用fun2</span></code></pre></li>
+<li>使用<strong>函数表达式</strong>来创建一个函数  <blockquote>
+<p>语法：var 函数名 = function([形参1，形参2…形参N]) {<br>语句…;语句…;<br>}</p>
+</blockquote>
+<pre><code class="hljs javascript"><span class="hljs-keyword">var</span> fun3 = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>&#123;
+	<span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;我是匿名函数中的封装函数&quot;</span>);
+&#125;
+fun3();</code></pre>
+
+</li>
+</ul>
+<h2 id="2-函数的参数"><a href="#2-函数的参数" class="headerlink" title="2.函数的参数"></a>2.函数的参数</h2><ul>
+<li>定义一个求两数之和的函数  <pre><code class="hljs javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">sum</span>(<span class="hljs-params">a,b</span>) </span>&#123;		<span class="hljs-comment">//a和b即为形参，声明形参就相当于在函数内部声明了对应的变量，但是并不赋值</span>
+	<span class="hljs-built_in">console</span>.log(a + b);
+&#125;
+sum(<span class="hljs-number">1</span>,<span class="hljs-number">2</span>);	<span class="hljs-comment">//1和2即为调用的实参，会赋值给对应的形参</span>
+<span class="hljs-comment">/* </span>
+<span class="hljs-comment">	调用函数时，解析器不会检查实参的类型；</span>
+<span class="hljs-comment">	调用函数时，解析器也不会检查实参的数量</span>
+<span class="hljs-comment">    	多余的实参不会被赋值；</span>
+<span class="hljs-comment">      	实参的数量少于形参的数量，则没有对应实参的形参将会是undefined</span>
+<span class="hljs-comment"> */</span></code></pre>
+
+</li>
+</ul>
+<h2 id="3-return-返回值"><a href="#3-return-返回值" class="headerlink" title="3.return 返回值"></a>3.return 返回值</h2><ul>
+<li>创建一个函数，用来计算三个数的和  <pre><code class="hljs javascript"><span class="hljs-comment">/*</span>
+<span class="hljs-comment">	可以使用 return 来设置函数返回值</span>
+<span class="hljs-comment">	语法：return 值;</span>
+<span class="hljs-comment">	return后的值将会作为函数的执行结果返回，可以定义一个变量来接收结果</span>
+<span class="hljs-comment"> */</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">sum</span>(<span class="hljs-params">a,b,c</span>) </span>&#123;
+	d = a + b + c;
+	<span class="hljs-keyword">return</span> d;
+	alert(<span class="hljs-string">&quot;你好&quot;</span>);  <span class="hljs-comment">//在函数中，return后的语句都不会执行</span>
+&#125;
+	<span class="hljs-comment">//变量result接收函数的执行结果</span>
+	<span class="hljs-comment">//函数返回什么，result的值就是什么</span>
+<span class="hljs-keyword">var</span> result = sum(<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>);
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;result = &quot;</span>+result);</code></pre>
+<blockquote>
+<p><code>break;</code>  //退出当前循环<br><code>continue;</code>   //跳过当次循环<br><code>return;</code> //结束整个函数<br>返回值可以是任意类型，可以是对象也可以是函数。  </p>
+</blockquote>
+</li>
+</ul>
+<h2 id="4-立即执行函数"><a href="#4-立即执行函数" class="headerlink" title="4.立即执行函数"></a>4.立即执行函数</h2><blockquote>
+<p>函数定义完，立即被调用，只执行一次  </p>
+</blockquote>
+<pre><code class="hljs clojure">(<span class="hljs-name">function</span>()&#123;
+	alert(<span class="hljs-string">&quot;我是一个匿名函数&quot;</span>)<span class="hljs-comment">;</span>
+&#125;)()<span class="hljs-comment">;</span>
+
+(<span class="hljs-name">function</span>(<span class="hljs-name">a</span>,b)&#123;
+	console.log(<span class="hljs-string">&quot;a = &quot;</span>+a)<span class="hljs-comment">;</span>
+	console.log(<span class="hljs-string">&quot;b = &quot;</span>+b)<span class="hljs-comment">;</span>
+&#125;)(<span class="hljs-number">123</span>,<span class="hljs-number">456</span>)<span class="hljs-comment">;</span></code></pre>
+
+<h2 id="5-对象"><a href="#5-对象" class="headerlink" title="5.对象"></a>5.对象</h2><ul>
+<li>方法  <blockquote>
+<p>函数也可以成为对象的属性，如果一个函数作为一个对象的函数保存，则我们称这个函数为这个对象的方法；<br>调用这个函数就说调用对象的方法(method)，但是他只是名称上的区别，没有其他的区别。  </p>
+</blockquote>
+<pre><code class="hljs javascript"><span class="hljs-keyword">var</span> obj = &#123;		<span class="hljs-comment">//创建一个新的对象</span>
+	name:<span class="hljs-string">&quot;卡卡罗特&quot;</span>,
+	age:<span class="hljs-number">18</span>,
+	sayName: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>&#123;		<span class="hljs-comment">//对象中的属性值可以是任何的数据类型，也可以是个函数</span>
+		<span class="hljs-built_in">console</span>.log(obj.name);
+	&#125;
+&#125;;
+
+obj.sayName();  <span class="hljs-comment">//调用方法</span></code></pre>
+
+</li>
+</ul>
+<h2 id="6-枚举对象的属性"><a href="#6-枚举对象的属性" class="headerlink" title="6.枚举对象的属性"></a>6.枚举对象的属性</h2><blockquote>
+<p>使用 for…in 语句<br>语法：<br>for(var 变量 in 对象) {<br>}  </p>
+</blockquote>
+<pre><code class="hljs javascript"><span class="hljs-keyword">for</span>(<span class="hljs-keyword">var</span> n <span class="hljs-keyword">in</span> obj) &#123;
+	<span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;属性名：&quot;</span>+n);		<span class="hljs-comment">//输出属性名</span>
+	<span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;属性值：&quot;</span>+obj[n]);		<span class="hljs-comment">//输出属性值</span>
+&#125;</code></pre>
+
+<h2 id="7-作用域-Scope"><a href="#7-作用域-Scope" class="headerlink" title="7.作用域(Scope)"></a>7.作用域(Scope)</h2><p>指一个变量的作用范围  </p>
+<ul>
+<li><p>全局作用域</p>
+<blockquote>
+<ul>
+<li>直接编写在script标签中的JS代码，都在全局作用域中。</li>
+<li>在页面打开时创建，页面关闭时销毁。</li>
+<li>在全局作用域中，有一个全局对象window(代表一个浏览器窗口，由浏览器创建，可以直接使用)，我们可以直接使用。</li>
+<li>在全局作用域中:<br>创建的变量都会作为window对象的属性保存;<br>创建的函数都会作为window的函数保存。 </li>
+<li>全局作用域中的变量都是全局变量，在页面中任意部分都可以访问得到  </li>
+</ul>
+</blockquote>
+<pre><code class="hljs javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">fun</span>(<span class="hljs-params"></span>)</span>&#123;
+	<span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;我是fun&quot;</span>);
+&#125;
+
+<span class="hljs-built_in">console</span>.log(<span class="hljs-built_in">window</span>.fun);	<span class="hljs-comment">//作为window函数保存</span></code></pre>
+</li>
+<li><p>提前声明  </p>
+<blockquote>
+<p>变量的声明提前：<br> 使用var关键字声明的变量，会在所有的代码执行之前被声明(但是不会赋值)；<br> 但是如果声明变量时，不使用var关键字，则变量不会被声明提前。  </p>
+</blockquote>
+<blockquote>
+<p>函数的声明提前：<br> 使用函数声明形式创建的函数 function 函数(){}，它会在所有的代码执行之前就被创建，所以我们可以在函数声明前调用函数；<br> 使用函数表达式创建的函数不会被声明提前，所以不能在声明前调用。</p>
+</blockquote>
+</li>
+<li><p>函数作用域  </p>
+<blockquote>
+<ul>
+<li>调用函数时创建函数作用域，函数执行完毕之后，函数作用域销毁；</li>
+<li>每调用一次函数就会创建一次新的函数作用域，他们之间是相互独立的；</li>
+<li>在函数作用域中可以访问到全局变量,在全局作用域中无法访问函数作用域的变量；</li>
+<li>当在函数作用域中操作一个变量时，先会在自身作用域中寻找，如果有就直接使用，如果没有就向上级作用域中寻找，直到找到全局作用域，如果全局作用域也未找到，则会报错BeferenceError；</li>
+<li>在函数中要访问全局变量，可以使用window对象。  </li>
+</ul>
+</blockquote>
+<pre><code class="hljs javascript"><span class="hljs-comment">//函数作用域中，var关键字声明的变量，会在函数中所有代码执行前声明</span>
+<span class="hljs-comment">//函数声明也会在函数中所有代码执行前建立</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">fun3</span>(<span class="hljs-params"></span>) </span>&#123;
+	<span class="hljs-built_in">console</span>.log(a); 	<span class="hljs-comment">//a已经声明，未赋值，会输出undefined</span>
+	fun4(); 	<span class="hljs-comment">//已建立</span>
+	<span class="hljs-keyword">var</span> a = <span class="hljs-number">35</span>;		<span class="hljs-comment">//赋值</span>
+	<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">fun4</span>(<span class="hljs-params"></span>) </span>&#123;
+		alert(<span class="hljs-string">&quot;fun4&quot;</span>);
+	&#125;
+&#125;
+fun3();
+
+<span class="hljs-keyword">var</span> c = <span class="hljs-number">33</span>;</code></pre>
+<pre><code class="hljs js"><span class="hljs-comment">//在函数中，不使用var声明的变量都会成为全局变量</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">fun5</span>(<span class="hljs-params"></span>) </span>&#123;
+	d = <span class="hljs-number">100</span>;	<span class="hljs-comment">//没有使用var关键字，则会设置为全局变量</span>
+&#125;
+fun5();
+
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;d = &quot;</span>+d);	<span class="hljs-comment">//在全局输出d,会输出100</span></code></pre>
+<pre><code class="hljs delphi"><span class="hljs-comment">//定义形参就相当于在函数作用域中声明了变量</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">fun6</span><span class="hljs-params">(e)</span> <span class="hljs-comment">&#123;</span></span>
+<span class="hljs-function"><span class="hljs-comment">	alert(e);</span></span>
+<span class="hljs-function"><span class="hljs-comment">&#125;</span></span>
+<span class="hljs-function"><span class="hljs-title">fun6</span><span class="hljs-params">()</span>;</span></code></pre>
+
+</li>
+</ul>
+<h2 id="8-this"><a href="#8-this" class="headerlink" title="8.this"></a>8.this</h2><p>&emsp;解析器在调用函数时，每次都会向函数内部传递进一个隐含的参数,这个隐含的参数就是this，this指向的是一个对象。这个对象我们称为函数执行的上下文对象，根据函数的调用方式不同，this会指向不同的对象：<br>&emsp;1.以函数的形式调用时，this永远都是window<br>&emsp;2.以方法的形式调用时，this就是调用方法的对象<br>&emsp;3.在构造函数中可以使用this来引用新建的对象  </p>
+<pre><code class="hljs js"><span class="hljs-keyword">var</span> name = <span class="hljs-string">&quot;全局的name属性&quot;</span>;
+	<span class="hljs-comment">//创建一个函数</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">fun</span>(<span class="hljs-params"></span>) </span>&#123;
+	<span class="hljs-built_in">console</span>.log(<span class="hljs-built_in">this</span>.name);
+&#125;
+
+  <span class="hljs-comment">//创建一个对象</span>
+<span class="hljs-keyword">var</span> obj = &#123;
+	name:<span class="hljs-string">&quot;卡卡罗特&quot;</span>,
+	sayName:fun	<span class="hljs-comment">//即obj.sayName == fun</span>
+&#125;;
+
+fun();  <span class="hljs-comment">//以函数的形式调用，this是window</span>
+obj.sayName();  <span class="hljs-comment">//以方法的形式调用，this是调用方法的对象</span></code></pre>
+
+<h2 id="9-工厂方法创建对象"><a href="#9-工厂方法创建对象" class="headerlink" title="9.工厂方法创建对象"></a>9.工厂方法创建对象</h2><p>&emsp;通过该方法可以大批量创建对象  </p>
+<pre><code class="hljs js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">creatPerson</span>(<span class="hljs-params">name,age,gender</span>)</span>&#123;
+	<span class="hljs-keyword">var</span> obj = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Object</span>();	<span class="hljs-comment">//创建一个新的对象</span>
+	<span class="hljs-comment">//向对象中添加属性</span>
+	obj.name = name;
+	obj.age = age;
+	obj.gender = gender;
+	obj.sayName = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>&#123;
+		alert(<span class="hljs-built_in">this</span>.name);
+	&#125;;
+	<span class="hljs-comment">//将新的对象返回</span>
+	<span class="hljs-keyword">return</span> obj;
+&#125;
+<span class="hljs-comment">//创建对象及其属性</span>
+<span class="hljs-keyword">var</span> obj2 = creatPerson(<span class="hljs-string">&quot;卡卡罗特&quot;</span>,<span class="hljs-number">18</span>,<span class="hljs-string">&quot;赛亚人&quot;</span>);
+<span class="hljs-keyword">var</span> obj3 = creatPerson(<span class="hljs-string">&quot;贝吉塔&quot;</span>,<span class="hljs-number">18</span>,<span class="hljs-string">&quot;赛亚人&quot;</span>);
+<span class="hljs-keyword">var</span> obj4 = creatPerson(<span class="hljs-string">&quot;比鲁斯&quot;</span>,<span class="hljs-number">100</span>,<span class="hljs-string">&quot;破坏神&quot;</span>);</code></pre>
+<blockquote>
+<p>不足之处：使用工厂方法创建的对象都是Object类型，导致我们无法区分出多种不同类型的对象。(用构造函数解决)</p>
+</blockquote>
+<h2 id="10-构造函数"><a href="#10-构造函数" class="headerlink" title="10.构造函数"></a>10.构造函数</h2><p>&emsp;构造函数就是一个普通函数，创建方式和普通函数没区别，不同的是构造函数习惯上首字母大写。构造函数和普通函数的调用方式不同，普通函数是直接调用，而构造函数需要使用new关键字调用。  </p>
+<p>&emsp;构造函数的执行流程:<br>&emsp;1.立刻创建一个新的对象;<br>&emsp;2.将我们新建的对象设置为设置为函数中的this，在构造函数中可以使用this来引用新建的对象;<br>&emsp;3.逐行执行函数中的代码;<br>&emsp;4.将新建的对象作为返回值返回.</p>
+<blockquote>
+<p>使用同一个构造函数创建的对象，称为同一类对象，也将一个构造函数称为一个类。<br>             我们将通过一个构造函数创建的对象，称为是该类的实例。  </p>
+</blockquote>
+<pre><code class="hljs js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Person</span>(<span class="hljs-params">name,age,gender</span>) </span>&#123;
+	<span class="hljs-built_in">this</span>.name = name;
+	<span class="hljs-built_in">this</span>.age = age;
+	<span class="hljs-built_in">this</span>.gender = gender;
+	<span class="hljs-built_in">this</span>.sayName = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>&#123;
+	alert(<span class="hljs-built_in">this</span>.name);
+	&#125;;
+&#125;
+
+<span class="hljs-comment">//per1 是 Person 的实例</span>
+<span class="hljs-keyword">var</span> per1 = <span class="hljs-keyword">new</span> Person(<span class="hljs-string">&quot;卡卡罗特&quot;</span>,<span class="hljs-number">18</span>,<span class="hljs-string">&quot;赛亚人&quot;</span>);
+<span class="hljs-keyword">var</span> per2 = <span class="hljs-keyword">new</span> Person(<span class="hljs-string">&quot;贝吉塔&quot;</span>,<span class="hljs-number">18</span>,<span class="hljs-string">&quot;赛亚人&quot;</span>);
+<span class="hljs-keyword">var</span> per3 = <span class="hljs-keyword">new</span> Person(<span class="hljs-string">&quot;比鲁斯&quot;</span>,<span class="hljs-number">100</span>,<span class="hljs-string">&quot;破坏神&quot;</span>);
+
+<span class="hljs-comment">//使用instanceof可以检查一个对象是否是一个类的实例</span>
+<span class="hljs-built_in">console</span>.log(per1 <span class="hljs-keyword">instanceof</span> Person);	<span class="hljs-comment">//返回true</span>
+<span class="hljs-comment">//所有的对象都是Object的后代,任何对象和Object用instanceof检查时都会返回true</span>
+<span class="hljs-built_in">console</span>.log(per1 <span class="hljs-keyword">instanceof</span> Person);	<span class="hljs-comment">//返回true</span></code></pre>
+<blockquote>
+<p>上述不足：<br>在Person构造函数中，为每一个对象都添加了一个sayName方法，是在构造函数内部创建的，构造函数每执行一次，都会创建一个新的sayName方法，所有Person的sayName都是唯一的，这样就导致构造函数执行一次就会创建一个新的方法，执行10000次就会创建10000个新的方法，而10000个方法都是一模一样的。(用原型解决)  </p>
+</blockquote>
+<h2 id="11-原型-prototype"><a href="#11-原型-prototype" class="headerlink" title="11.原型 prototype"></a>11.原型 prototype</h2><p>&emsp;我们所创建的每一个函数，解析器都会向函数中添加一个属性prototype，这个属性对应一个对象，这个对象就是我们所谓的原型对象；<br>&emsp;当我们的函数作为普通函数调用，prototype没有任何作用；<br>&emsp;当函数作为构造函数调用时，他所创建的对象中，都会有一个隐含的属性，指向该构造函数的原型对象，可以通过__proto__来访问该属性。</p>
+<p>&emsp;原型对象就相当于一个公共的区域，所有同一个类的实例都可以访问到这个原型对象，我们可以将对象中共有的内容，统一设置到原型对象中。  </p>
+<p>&emsp;当访问函数对象的一个属性或者方法时，会先在对象自身中寻找，如果有则直接使用，如果没有则会去原型对象中寻找，如果找到则直接使用。  </p>
+<p>&emsp;以后创造构造函数时，可以将这些对象共有的属性和方法，统一添加到构造函数的原型对象中，这样不用每一个对象添加，也不会影响到全局作用域就可以使每个对象都具有这些属性和方法了。  </p>
+<pre><code class="hljs js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">MyClass</span>(<span class="hljs-params"></span>) </span>&#123;
+
+&#125;
+
+MyClass.prototype.a = <span class="hljs-number">123</span>;	<span class="hljs-comment">//向MyClass的原型中添加属性a</span>
+
+MyClass.prototype.sayHello = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>&#123;	<span class="hljs-comment">//向MyClass的原型中添加一个方法</span>
+	alert(<span class="hljs-string">&quot;你好！！！&quot;</span>);
+&#125;;
+
+<span class="hljs-keyword">var</span> mc = <span class="hljs-keyword">new</span> MyClass();
+
+<span class="hljs-built_in">console</span>.log(mc.__proto__);  <span class="hljs-comment">// mc.__proto__ == MyClass.prototype</span>
+<span class="hljs-built_in">console</span>.log(mc.a);
+<span class="hljs-built_in">console</span>.log(mc.sayHello());</code></pre>
+<blockquote>
+<p>使用in检查对象中是否含有某个属性时，如果对象中没有但是原型中有，也会返回true<br>可以使用对象的hasOwnProperty()来检查对象自身中是否含有该属性 <code>mc.hasOwnProperty(&quot;name&quot;)</code>  </p>
+</blockquote>
+<blockquote>
+<p>原型对象也是对象，所以它也有原型<br>  &emsp;当我们使用一个对象的属性或者方法时，会先在自身中寻找<br>    &emsp;&emsp;如果自身中有，则直接使用;<br>    &emsp;&emsp;如果没有则去原型对象中寻找，如果原型对象中有则使用;<br>    &emsp;&emsp;如果没有的去原型的原型中寻找，直到找到Object对象的原型;<br>    &emsp;&emsp;Object对象的原型没有原型，如果Object中依然没有找到，则返回undefined。  </p>
+</blockquote>
+<ul>
+<li>toString  <blockquote>
+<p>当直接在页面中打印一个对象时，实际上输出的是对象的toString()方法的返回值<br>如果希望输出对象时不输出[object Object]，可以为对象添加一个toString()方法  </p>
+</blockquote>
+<pre><code class="hljs js"><span class="hljs-comment">//修改Person原型的toString</span>
+Person.prototype.toString = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>&#123;
+	<span class="hljs-keyword">return</span> <span class="hljs-string">&quot;Person[name:&quot;</span>+<span class="hljs-built_in">this</span>.name+<span class="hljs-string">&quot;，age:&quot;</span>+<span class="hljs-built_in">this</span>.age+<span class="hljs-string">&quot;,gender:&quot;</span>+<span class="hljs-built_in">this</span>.gender+<span class="hljs-string">&quot;]&quot;</span>;
+&#125;</code></pre>
+
+</li>
+</ul>
+<h2 id="12-垃圾回收-GC"><a href="#12-垃圾回收-GC" class="headerlink" title="12.垃圾回收(GC)"></a>12.垃圾回收(GC)</h2><blockquote>
+<ul>
+<li>就像人生活的时间长了会产生垃圾一样，程序运行过程中也会产生垃圾，垃圾过多会导致程序运行过慢，所以需要一个垃圾回收的机制，来处理程序运行过程中的垃圾;</li>
+<li>当一个对象没有任何的变量或属性对它进行引用，我们将永远无法操作该对象，这种对象就是一个垃圾，过多会占用大量的内存空间，导致程序运行变慢，所以这种垃圾必须进行清理;</li>
+<li>在JS中拥有自动的垃圾回收机制，会自动将这些垃圾对象从内存中销毁，我们不需要也不能进行垃圾回收的操作;</li>
+<li>我们需要做的只是将不再使用的对象设置null即可。</li>
+</ul>
+</blockquote>
+<pre><code class="hljs js"><span class="hljs-keyword">var</span> obj = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Object</span>();
+<span class="hljs-comment">//对对象进行各种操作</span>
+
+obj = <span class="hljs-literal">null</span>;</code></pre>
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/js/">js</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！</p>
+              
+              
+                <div class="post-prevnext row">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2020/08/28/Object%E7%B1%BB%E5%9E%8B-js/">
+                        <span class="hidden-mobile">Object类型_js</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments">
+                
+                
+  <div id="vcomments"></div>
+  <script type="text/javascript">
+    function loadValine() {
+      addScript('https://cdn.staticfile.org/valine/1.4.14/Valine.min.js', function () {
+        new Valine({
+          el: "#vcomments",
+          app_id: "ItTz5CmSfVYAUpeodYMrgK9m-gzGzoHsz",
+          app_key: "51hdlsDw8WeO4UJw4rvQPahs",
+          placeholder: "夸夸我吧",
+          path: window.location.pathname,
+          avatar: "retro",
+          meta: ["nick","mail","link"],
+          pageSize: "10",
+          lang: "zh-CN",
+          highlight: false,
+          recordIP: false,
+          serverURLs: "",
+        });
+      });
+    }
+    waitElementVisible('vcomments', loadValine);
+  </script>
+  <noscript>Please enable JavaScript to view the <a target="_blank" href="https://valine.js.org" rel="nofollow noopener noopener">comments
+      powered by Valine.</a></noscript>
+
+
+              </article>
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div id="tocbot"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+  <div class="col-lg-7 mx-auto nopadding-md">
+    <div class="container custom post-content mx-auto">
+      <img src="https://octodex.github.com/images/jetpacktocat.png" srcset="/img/loading.gif" class="rounded mx-auto d-block mt-5" style="width:150px; height:150px;">
+    </div>
+  </div>
+
+
+    
+  </main>
+
+  
+    <a id="scroll-top-button" href="#" role="button">
+      <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+    </a>
+  
+
+  
+    <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+  
+    <!-- APlayer 音乐播放器 -->
+    <div id="aplayer"></div>
+    <script defer src="https://cdn.staticfile.org/aplayer/1.10.1/APlayer.min.js" ></script>
+<link  rel="stylesheet" href="https://cdn.staticfile.org/aplayer/1.10.1/APlayer.min.css" />
+<script type="text/javascript">
+  var oldLoadAp = window.onload;
+  window.onload = function () {
+    oldLoadAp && oldLoadAp();
+
+    new APlayer({
+      container: document.getElementById('aplayer'),
+      fixed: true,
+      autoplay: 'false' === 'true',
+      loop: 'all',
+      order: 'random',
+      theme: '#b7daff',
+      preload: 'none',
+      audio: [{"name":"你离开了南京，从此没有人和我说话","artist":"B","url":"/songs/B.mp3","cover":"https://s1.ax1x.com/2020/08/24/dDt0pQ.jpg"}]
+    });
+  }
+</script>
+
+  
+
+  
+
+  <footer class="mt-5">
+  <div class="text-center py-3">
+    <div>
+      <p id="hitokoto" align="center">:D 获取中...</p>
+			<script>
+			  fetch('https://v1.hitokoto.cn')
+				.then(response => response.json())
+				.then(data => {
+				  const hitokoto = document.getElementById('hitokoto')
+				  hitokoto.innerText = data.hitokoto
+				  })
+				  .catch(console.error)
+			</script>
+    </div>
+    
+
+    
+
+    
+  </div>
+</footer>
+
+<!-- SCRIPTS -->
+<script  src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js" ></script>
+<script  src="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/main.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/lazyload.js" ></script>
+  
+
+
+
+  <script defer src="https://cdn.staticfile.org/clipboard.js/2.0.6/clipboard.min.js" ></script>
+  <script  src="/js/clipboard-use.js" ></script>
+
+
+
+
+
+
+
+  <script  src="https://cdn.staticfile.org/tocbot/4.11.1/tocbot.min.js" ></script>
+  <script>
+    $(document).ready(function () {
+      var boardCtn = $('#board-ctn');
+      var boardTop = boardCtn.offset().top;
+
+      tocbot.init({
+        tocSelector: '#tocbot',
+        contentSelector: '#post-body',
+        headingSelector: 'h1,h2,h3,h4,h5,h6',
+        linkClass: 'tocbot-link',
+        activeLinkClass: 'tocbot-active-link',
+        listClass: 'tocbot-list',
+        isCollapsedClass: 'tocbot-is-collapsed',
+        collapsibleClass: 'tocbot-is-collapsible',
+        collapseDepth: 0,
+        scrollSmooth: true,
+        headingsOffset: -boardTop
+      });
+      if ($('.toc-list-item').length > 0) {
+        $('#toc').css('visibility', 'visible');
+      }
+    });
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/typed.js/2.0.11/typed.min.js" ></script>
+  <script>
+    var typed = new Typed('#subtitle', {
+      strings: [
+        '  ',
+        "函数与对象_js&nbsp;",
+      ],
+      cursorChar: "_",
+      typeSpeed: 70,
+      loop: false,
+    });
+    typed.stop();
+    $(document).ready(function () {
+      $(".typed-cursor").addClass("h2");
+      typed.start();
+    });
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/anchor-js/4.2.2/anchor.min.js" ></script>
+  <script>
+    anchors.options = {
+      placement: "right",
+      visible: "hover",
+      
+    };
+    var el = "h1,h2,h3,h4,h5,h6".split(",");
+    var res = [];
+    for (item of el) {
+      res.push(".markdown-body > " + item)
+    }
+    anchors.add(res.join(", "))
+  </script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    var path = "/local-search.xml";
+    var inputArea = document.querySelector("#local-search-input");
+    inputArea.onclick = function () {
+      searchFunc(path, 'local-search-input', 'local-search-result');
+      this.onclick = null
+    }
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+  <script>
+    $('#post img:not(.no-zoom img, img[no-zoom]), img[zoom]').each(
+      function () {
+        var element = document.createElement('a');
+        $(element).attr('data-fancybox', 'images');
+        $(element).attr('href', $(this).attr('src'));
+        $(this).wrap(element);
+      }
+    );
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
