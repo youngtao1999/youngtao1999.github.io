@@ -4,6 +4,25 @@
   
   
   <entry>
+    <title>用的上的网站_note</title>
+    <link href="/2020/09/12/%E7%94%A8%E7%9A%84%E4%B8%8A%E7%9A%84%E7%BD%91%E7%AB%99-note/"/>
+    <url>/2020/09/12/%E7%94%A8%E7%9A%84%E4%B8%8A%E7%9A%84%E7%BD%91%E7%AB%99-note/</url>
+    
+    <content type="html"><![CDATA[<p><strong>&emsp;蛮久没更新了，之前每学一点就更新博客有点浪费时间，所以这次等学完这点JS再抽时间一起总结更新，就先放一些平时可能用得上的网站，当是保存着。</strong>  </p><h4 id="学习"><a href="#学习" class="headerlink" title="学习"></a>学习</h4><ul><li><p><a href="https://www.w3school.com.cn/index.html">w3school</a>：全球最大的中文 Web 技术教程。  </p></li><li><p><a href="https://www.runoob.com/">菜鸟教程</a>：不解释，类似w3school。  </p></li><li><p><a href="https://es6.ruanyifeng.com/">ES6 入门教程</a>：《ECMAScript 6 入门教程》是一本开源的 JavaScript 语言教程，全面介绍 ECMAScript 6 新引入的语法特性。  </p></li></ul><h4 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h4><ul><li><p><a href="https://www.iconfont.cn/">阿里巴巴矢量图标库</a>：国内功能很强大且图标内容很丰富的矢量图标库,提供矢量图标下载、在线存储、格式转换等功能。 </p></li><li><p><a href="https://getbootstrap.com/">Bootstrap</a>：一个CSS/HTML框架。  </p></li></ul><ul><li><p><a href="https://lanhuapp.com/web/#/item">蓝湖</a>：蓝湖是一款产品文档和设计图的共享平台,帮助互联网团队更好地管理文档和设计图。  </p></li><li><p><a href="https://imgchr.com/">路过图床</a>：图片转链接。  </p></li><li><p><a href="https://www.gaoding.com/">稿定图片</a>：图片编辑网页，可作图。  </p></li><li><p><a href="https://unbug.github.io/codelf/">AI取名</a>：智能取名，大犇推荐。  </p></li><li><p><a href="https://cubic-bezier.com/#.17,.67,.83,.67">贝塞尔曲线</a>：可设置CSS动画。  </p></li><li><p><a href="https://wallhaven.cc/">wallhaven</a>：超清壁纸网站。  </p></li></ul><blockquote><p>还发现有用得上的，会持续更新。。。。。。</p></blockquote>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>note</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>数组(Array)_js</title>
     <link href="/2020/09/03/%E6%95%B0%E7%BB%84-js/"/>
     <url>/2020/09/03/%E6%95%B0%E7%BB%84-js/</url>
