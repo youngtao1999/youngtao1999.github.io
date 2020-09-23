@@ -17,7 +17,7 @@
   <meta name="description" content="">
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
-  <title>jQuery笔记一_jq - Young</title>
+  <title>jQuery笔记二_jq - Young</title>
 
   <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
 
@@ -172,8 +172,8 @@
               
   <div class="mt-3 post-meta">
     <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-    <time datetime="2020-09-21 22:24" pubdate>
-      2020年9月21日 晚上
+    <time datetime="2020-09-23 21:59" pubdate>
+      2020年9月23日 晚上
     </time>
   </div>
 
@@ -183,7 +183,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      619 字
+      714 字
     </span>
   
 
@@ -193,7 +193,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      7
+      8
        分钟
     </span>
   
@@ -223,7 +223,7 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto" id="post">
             <!-- SEO header -->
-            <h1 style="display: none">jQuery笔记一_jq</h1>
+            <h1 style="display: none">jQuery笔记二_jq</h1>
             
               <p class="note note-info">
                 
@@ -232,116 +232,115 @@
               </p>
             
             <div class="markdown-body" id="post-body">
-              <h1 id="jQuery笔记一"><a href="#jQuery笔记一" class="headerlink" title="jQuery笔记一"></a>jQuery笔记一</h1><p>由于个人原因，先更新jQuery的一些基本内容，js的部分之后再补。</p>
-<h2 id="1-了解jQuery"><a href="#1-了解jQuery" class="headerlink" title="1.了解jQuery"></a>1.了解jQuery</h2><h4 id="是什么-What"><a href="#是什么-What" class="headerlink" title="是什么: What?"></a>是什么: What?</h4><ul>
-<li>一个JS函数库: write less, do more</li>
-<li>封装简化DOM操作(CRUD) / Ajax  </li>
+              <h1 id="jQuery笔记二"><a href="#jQuery笔记二" class="headerlink" title="jQuery笔记二"></a>jQuery笔记二</h1><p>接上一篇。</p>
+<h2 id="1-CSS模块"><a href="#1-CSS模块" class="headerlink" title="1.CSS模块"></a>1.CSS模块</h2><h4 id="style样式"><a href="#style样式" class="headerlink" title="style样式"></a>style样式</h4><ul>
+<li><code>css(styleName)</code>: 根据样式名得到对应的值</li>
+<li><code>css(styleName, value)</code>: 设置一个样式</li>
+<li><code>css(&#123;多个样式对&#125;)</code>: 设置多个样式</li>
 </ul>
-<h4 id="为什么用它-why"><a href="#为什么用它-why" class="headerlink" title="为什么用它: why?"></a>为什么用它: why?</h4><ul>
-<li>强大选择器: 方便快速查找DOM元素</li>
-<li>隐式遍历(迭代): 一次操作多个元素</li>
-<li>读写合一: 读数据/写数据用的是一个函数</li>
-<li>链式调用: 可以通过.不断调用jQuery对象的方法</li>
-<li>事件处理</li>
-<li>DOM操作(CUD)</li>
-<li>样式操作</li>
-<li>动画</li>
-<li>浏览器兼容  </li>
+<h4 id="位置坐标"><a href="#位置坐标" class="headerlink" title="位置坐标"></a>位置坐标</h4><ul>
+<li><code>offset()</code>: 读/写当前元素坐标(原点是页面左上角)</li>
+<li><code>position()</code>: 读当前元素坐标(原点是父元素左上角)</li>
+<li><code>scrollTop()/scrollLeft()</code>: 读/写元素/页面的滚动条坐标</li>
 </ul>
-<h4 id="如何使用-How"><a href="#如何使用-How" class="headerlink" title="如何使用: How?"></a>如何使用: How?</h4><ul>
-<li>引入jQuery库<ul>
-<li>本地引入与CDN远程引入</li>
-<li>测试版与生产版(压缩版)</li>
+<h4 id="尺寸"><a href="#尺寸" class="headerlink" title="尺寸"></a>尺寸</h4><ul>
+<li><code>width()/height()</code>: width/height</li>
+<li><code>innerWidth()/innerHeight()</code>: width + padding</li>
+<li><code>outerWidth()/outerHeight()</code>: width + padding + border</li>
 </ul>
-</li>
-<li>使用jQuery<ul>
-<li>使用jQuery函数: $/jQuery</li>
-<li>使用jQuery对象: $xxx(执行$()得到的)  </li>
-</ul>
-</li>
-</ul>
-<h2 id="2-jQuery的2把利器"><a href="#2-jQuery的2把利器" class="headerlink" title="2. jQuery的2把利器"></a>2. jQuery的2把利器</h2><blockquote>
-<p>jQuery函数: $/jQuery<br>jQuery向外暴露的就是jQuery函数, 可以直接使用</p>
+<h2 id="2-筛选模块"><a href="#2-筛选模块" class="headerlink" title="2.筛选模块"></a>2.筛选模块</h2><h4 id="过滤"><a href="#过滤" class="headerlink" title="过滤"></a>过滤</h4><blockquote>
+<p>在jQuery对象内部的元素中找出部分匹配的元素, 并封装成新的jQuery对象返回  </p>
 </blockquote>
-<h4 id="当成一般函数使用-param"><a href="#当成一般函数使用-param" class="headerlink" title="当成一般函数使用: $(param)"></a>当成一般函数使用: <code>$(param)</code></h4><ul>
-<li><code>param</code>是<code>function</code>: 相当于<code>window.onload = function</code>(文档加载完成的监听)</li>
-<li><code>param</code>是选择器字符串: 查找所有匹配的DOM元素, 返回包含所有DOM元素的jQuery对象</li>
-<li><code>param</code>是DOM元素: 将DOM元素对象包装为jQuery对象返回<code>$(this)</code></li>
-<li><code>param</code>是标签字符串: 创建标签DOM元素对象并包装为jQuery对象返回  </li>
+<ul>
+<li><code>first()</code></li>
+<li><code>last()</code></li>
+<li><code>eq(index)</code></li>
+<li><code>filter(selector)</code>: 对当前元素提要求</li>
+<li><code>not(selector)</code>: 对当前元素提要求, 并取反</li>
+<li><code>has(selector)</code>: 对子孙元素提要求</li>
 </ul>
-<h4 id="当成对象使用-xxx"><a href="#当成对象使用-xxx" class="headerlink" title="当成对象使用: $.xxx"></a>当成对象使用: $.xxx</h4><ul>
-<li><code>each(obj/arr, function(key, value)&#123;&#125;)</code></li>
-<li><code>trim(str)</code></li>
-<li>jQuery对象:<ul>
-<li>包含所有匹配的n个DOM元素的伪数组对象</li>
-<li>执行$()返回的就是jQuery对象</li>
-<li>基本行为:<ul>
-<li><code>length/size()</code>: 得到dom元素的个数</li>
-<li><code>[index]</code>: 得到指定下标对应的dom元素</li>
-<li><code>each(function(index, domEle)&#123;&#125;)</code>: 遍历所有dom元素</li>
-<li><code>index()</code>: 得到当前dom元素在所有兄弟中的下标  </li>
+<h4 id="查找"><a href="#查找" class="headerlink" title="查找"></a>查找</h4><blockquote>
+<p>查找jQuery对象内部的元素的子孙/兄弟/父母元素, 并封装成新的jQuery对象返回</p>
+</blockquote>
+<ul>
+<li><code>children(selector)</code>: 子元素</li>
+<li><code>find(selector)</code>: 后代元素</li>
+<li><code>preAll(selector)</code>: 前的所有兄弟</li>
+<li><code>siblings(selector)</code>: 所有兄弟</li>
+<li><code>parent()</code>: 父元素</li>
+</ul>
+<h2 id="3-文档处理-CUD-模块"><a href="#3-文档处理-CUD-模块" class="headerlink" title="3.文档处理(CUD)模块"></a>3.文档处理(CUD)模块</h2><h4 id="增加"><a href="#增加" class="headerlink" title="增加"></a>增加</h4><ul>
+<li><code>append() / appendTo()</code>: 插入后部</li>
+<li><code>preppend() / preppendTo()</code>: 插入前部</li>
+<li><code>before()</code>: 插到前面</li>
+<li><code>after()</code>: 插到后面</li>
+</ul>
+<h4 id="删除"><a href="#删除" class="headerlink" title="删除"></a>删除</h4><ul>
+<li><code>remove()</code>: 将自己及内部的孩子都删除</li>
+<li><code>empty()</code>: 掏空(自己还在)</li>
+</ul>
+<h4 id="更新"><a href="#更新" class="headerlink" title="更新"></a>更新</h4><ul>
+<li><code>replaceWith()</code></li>
+</ul>
+<h2 id="4-事件模块"><a href="#4-事件模块" class="headerlink" title="4.事件模块"></a>4.事件模块</h2><h4 id="绑定事件"><a href="#绑定事件" class="headerlink" title="绑定事件"></a>绑定事件</h4><ul>
+<li><code>eventName(function()&#123;&#125;)</code>: 绑定对应事件名的监听,编码方便, 但只能加一个监听, 且有的事件监听不支持</li>
+<li><code>on(&#39;eventName&#39;, function()&#123;&#125;)</code> : 通用的绑定事件监听,编码不方便, 可以添加多个监听, 且更通用</li>
+<li>常用: <code>click</code>, <code>mouseenter/mouseleave</code> <code>mouseover/mouseout</code> <code>focus/blur</code></li>
+<li><code>hover(function()&#123;&#125;, function()&#123;&#125;)</code></li>
+</ul>
+<h4 id="解绑事件"><a href="#解绑事件" class="headerlink" title="解绑事件"></a>解绑事件</h4><ul>
+<li><code>off(&#39;eventName&#39;)</code></li>
+</ul>
+<h4 id="事件委托"><a href="#事件委托" class="headerlink" title="事件委托"></a>事件委托</h4><ul>
+<li>理解: 将子元素的事件委托给父辈元素处理<ul>
+<li>事件监听绑定在父元素上, 但事件发生在子元素上</li>
+<li>　事件会冒泡到父元素</li>
+<li>但最终调用的事件回调函数的是子元素: event.target</li>
+</ul>
+</li>
+<li>好处<ul>
+<li>新增的元素没有事件监听</li>
+<li>减少监听的数量(n==&gt;1)</li>
+</ul>
+</li>
+<li>编码<ul>
+<li><code>on(&#39;eventName&#39;, selector, function(event)&#123;&#125;)</code> // 回调函数中的this是子元素</li>
+<li><code>off(&#39;eventName&#39;)</code></li>
 </ul>
 </li>
 </ul>
+<h4 id="事件坐标"><a href="#事件坐标" class="headerlink" title="事件坐标"></a>事件坐标</h4><ul>
+<li><code>event.offsetX</code>: 原点是当前元素左上角</li>
+<li><code>event.clientX</code>: 原点是窗口左上角</li>
+<li><code>event.pageX</code>: 原点是页面左上角</li>
+</ul>
+<h4 id="事件相关"><a href="#事件相关" class="headerlink" title="事件相关"></a>事件相关</h4><ul>
+<li>停止事件冒泡: <code>event.stopPropagation()</code></li>
+<li>阻止事件的默认行为: <code>event.preventDefault()</code></li>
+</ul>
+<h2 id="5-动画效果"><a href="#5-动画效果" class="headerlink" title="5.动画效果"></a>5.动画效果</h2><blockquote>
+<p>在一定的时间内, 不断改变元素样式</p>
+</blockquote>
+<ul>
+<li><code>slideDown()/slideUp()/slideToggle()</code>    : 滑动动画:不断改变元素的高度</li>
+<li><code>fadeOut()/fadeIn()/fadeToggle()</code>    : 淡入淡出: 不断改变元素的透明度(opaticy)</li>
+<li><code>show()/hide()/toggle()</code>    : 显示隐藏</li>
+<li><code>animate(&#123;结束时的样式&#125;, time, fun)</code></li>
+<li><code>stop()</code>    : 停止动画</li>
+</ul>
+<h2 id="6-插件机制"><a href="#6-插件机制" class="headerlink" title="6.插件机制"></a>6.插件机制</h2><ul>
+<li><p>扩展jQuery函数对象的方法</p>
+<pre><code class="hljs js">$.extend(&#123;
+	xxx: fuction()&#123;&#125; <span class="hljs-comment">// this是$</span>
+&#125;)
+$.xxx()</code></pre>
 </li>
+<li><p>扩展jQuery对象的方法</p>
+<pre><code class="hljs js">$.fn.extend(&#123;
+	xxx: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>&#123;&#125;  <span class="hljs-comment">// this是jQuery对象</span>
+&#125;)
+$obj.xxx()</code></pre></li>
 </ul>
-<h2 id="3-选择器"><a href="#3-选择器" class="headerlink" title="3. 选择器"></a>3. 选择器</h2><h4 id="是什么"><a href="#是什么" class="headerlink" title="是什么?"></a>是什么?</h4><ul>
-<li>有特定语法规则(css选择器)的字符串</li>
-<li>用来查找某个/些DOM元素: $(selector)</li>
-</ul>
-<h4 id="分类"><a href="#分类" class="headerlink" title="分类"></a>分类</h4><ul>
-<li>基本<ul>
-<li><code>#id</code></li>
-<li><code>tagName/*</code></li>
-<li><code>.class</code></li>
-<li><code>selector1,selector2,selector3</code>: 并集</li>
-<li><code>selector1selector2selector3</code>: 交集</li>
-</ul>
-</li>
-<li>层次<ul>
-<li>找子孙后代, 兄弟元素</li>
-<li><code>selector1&gt;selector2</code>: 子元素</li>
-<li><code>selector1 selector2</code>: 后代元素</li>
-</ul>
-</li>
-<li>过滤<ul>
-<li>在原有匹配元素中筛选出其中一些</li>
-<li><code>:first</code></li>
-<li><code>:last</code></li>
-<li><code>:eq(index)</code></li>
-<li><code>:lt</code></li>
-<li><code>:gt</code></li>
-<li><code>:odd</code></li>
-<li><code>:even</code></li>
-<li><code>:not(selector)</code></li>
-<li><code>:hidden</code></li>
-<li><code>:visible</code></li>
-<li><code>[attrName]</code></li>
-<li><code>[attrName=value]</code></li>
-</ul>
-</li>
-<li>表单<ul>
-<li><code>:input</code></li>
-<li><code>:text</code></li>
-<li><code>:checkbox</code></li>
-<li><code>:radio</code></li>
-<li><code>:checked</code>: 选中的  </li>
-</ul>
-</li>
-</ul>
-<ol start="4">
-<li>属性/文本<ul>
-<li>操作标签的属性, 标签体文本</li>
-<li><code>attr(name) / attr(name, value)</code>: 读写非布尔值的标签属性</li>
-<li><code>prop(name) / prop(name, value)</code>: 读写布尔值的标签属性</li>
-<li><code>removeAttr(name)/removeProp(name)</code>: 删除属性</li>
-<li><code>addClass(classValue)</code>: 添加class</li>
-<li><code>removeClass(classValue)</code>: 移除指定class</li>
-<li><code>val() / val(value)</code>: 读写标签的value</li>
-<li><code>html() / html(htmlString)</code>: 读写标签体文本</li>
-</ul>
-</li>
-</ol>
 
             </div>
             <hr>
@@ -365,18 +364,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2020/09/23/jQuery%E7%AC%94%E8%AE%B0%E4%BA%8C-jq/">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">jQuery笔记二_jq</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2020/09/12/%E7%94%A8%E7%9A%84%E4%B8%8A%E7%9A%84%E7%BD%91%E7%AB%99-note/">
-                        <span class="hidden-mobile">用的上的网站_note</span>
+                      <a href="/2020/09/21/jQuery%E7%AC%94%E8%AE%B0%E4%B8%80-jq/">
+                        <span class="hidden-mobile">jQuery笔记一_jq</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
@@ -582,7 +575,7 @@
     var typed = new Typed('#subtitle', {
       strings: [
         '  ',
-        "jQuery笔记一_jq&nbsp;",
+        "jQuery笔记二_jq&nbsp;",
       ],
       cursorChar: "_",
       typeSpeed: 70,
