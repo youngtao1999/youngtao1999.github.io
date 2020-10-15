@@ -17,7 +17,7 @@
   <meta name="description" content="">
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
-  <title>jQuery笔记二_jq - Young</title>
+  <title>仿网易云播放器_vue - Young</title>
 
   <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
 
@@ -172,8 +172,8 @@
               
   <div class="mt-3 post-meta">
     <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-    <time datetime="2020-09-23 21:59" pubdate>
-      2020年9月23日 晚上
+    <time datetime="2020-10-15 09:45" pubdate>
+      2020年10月15日 上午
     </time>
   </div>
 
@@ -183,7 +183,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      714 字
+      257 字
     </span>
   
 
@@ -193,7 +193,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      8
+      2
        分钟
     </span>
   
@@ -223,124 +223,53 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto" id="post">
             <!-- SEO header -->
-            <h1 style="display: none">jQuery笔记二_jq</h1>
+            <h1 style="display: none">仿网易云播放器_vue</h1>
             
               <p class="note note-info">
                 
-                  本文最后更新于：2020年9月23日 晚上
+                  本文最后更新于：2020年10月15日 上午
                 
               </p>
             
             <div class="markdown-body" id="post-body">
-              <h1 id="jQuery笔记二"><a href="#jQuery笔记二" class="headerlink" title="jQuery笔记二"></a>jQuery笔记二</h1><p>接上一篇。</p>
-<h2 id="1-CSS模块"><a href="#1-CSS模块" class="headerlink" title="1.CSS模块"></a>1.CSS模块</h2><h4 id="style样式"><a href="#style样式" class="headerlink" title="style样式"></a>style样式</h4><ul>
-<li><code>css(styleName)</code>: 根据样式名得到对应的值</li>
-<li><code>css(styleName, value)</code>: 设置一个样式</li>
-<li><code>css(&#123;多个样式对&#125;)</code>: 设置多个样式</li>
-</ul>
-<h4 id="位置坐标"><a href="#位置坐标" class="headerlink" title="位置坐标"></a>位置坐标</h4><ul>
-<li><code>offset()</code>: 读/写当前元素坐标(原点是页面左上角)</li>
-<li><code>position()</code>: 读当前元素坐标(原点是父元素左上角)</li>
-<li><code>scrollTop()/scrollLeft()</code>: 读/写元素/页面的滚动条坐标</li>
-</ul>
-<h4 id="尺寸"><a href="#尺寸" class="headerlink" title="尺寸"></a>尺寸</h4><ul>
-<li><code>width()/height()</code>: width/height</li>
-<li><code>innerWidth()/innerHeight()</code>: width + padding</li>
-<li><code>outerWidth()/outerHeight()</code>: width + padding + border</li>
-</ul>
-<h2 id="2-筛选模块"><a href="#2-筛选模块" class="headerlink" title="2.筛选模块"></a>2.筛选模块</h2><h4 id="过滤"><a href="#过滤" class="headerlink" title="过滤"></a>过滤</h4><blockquote>
-<p>在jQuery对象内部的元素中找出部分匹配的元素, 并封装成新的jQuery对象返回  </p>
+              <h1 id="仿网易云音乐播放器"><a href="#仿网易云音乐播放器" class="headerlink" title="仿网易云音乐播放器"></a>仿网易云音乐播放器</h1><p>本项目使用VSCode工具编码。是一个vue框架的练手项目，该项目中使用到了vue-router、element-ui、vue-cli及axios等相关技术。  </p>
+<h2 id="项目展示与说明"><a href="#项目展示与说明" class="headerlink" title="项目展示与说明"></a>项目展示与说明</h2><h3 id="文件结构"><a href="#文件结构" class="headerlink" title="文件结构"></a>文件结构</h3><blockquote>
+<p>components文件下为主组件，view下是各页面视图组件  </p>
 </blockquote>
-<ul>
-<li><code>first()</code></li>
-<li><code>last()</code></li>
-<li><code>eq(index)</code></li>
-<li><code>filter(selector)</code>: 对当前元素提要求</li>
-<li><code>not(selector)</code>: 对当前元素提要求, 并取反</li>
-<li><code>has(selector)</code>: 对子孙元素提要求</li>
-</ul>
-<h4 id="查找"><a href="#查找" class="headerlink" title="查找"></a>查找</h4><blockquote>
-<p>查找jQuery对象内部的元素的子孙/兄弟/父母元素, 并封装成新的jQuery对象返回</p>
+<img src="https://s1.ax1x.com/2020/10/14/0IVHBD.png" srcset="/img/loading.gif" width="50%" height="50%">  
+
+<h3 id="发现音乐页面"><a href="#发现音乐页面" class="headerlink" title="发现音乐页面"></a>发现音乐页面</h3><blockquote>
+<p>主页面</p>
 </blockquote>
-<ul>
-<li><code>children(selector)</code>: 子元素</li>
-<li><code>find(selector)</code>: 后代元素</li>
-<li><code>preAll(selector)</code>: 前的所有兄弟</li>
-<li><code>siblings(selector)</code>: 所有兄弟</li>
-<li><code>parent()</code>: 父元素</li>
-</ul>
-<h2 id="3-文档处理-CUD-模块"><a href="#3-文档处理-CUD-模块" class="headerlink" title="3.文档处理(CUD)模块"></a>3.文档处理(CUD)模块</h2><h4 id="增加"><a href="#增加" class="headerlink" title="增加"></a>增加</h4><ul>
-<li><code>append() / appendTo()</code>: 插入后部</li>
-<li><code>preppend() / preppendTo()</code>: 插入前部</li>
-<li><code>before()</code>: 插到前面</li>
-<li><code>after()</code>: 插到后面</li>
-</ul>
-<h4 id="删除"><a href="#删除" class="headerlink" title="删除"></a>删除</h4><ul>
-<li><code>remove()</code>: 将自己及内部的孩子都删除</li>
-<li><code>empty()</code>: 掏空(自己还在)</li>
-</ul>
-<h4 id="更新"><a href="#更新" class="headerlink" title="更新"></a>更新</h4><ul>
-<li><code>replaceWith()</code></li>
-</ul>
-<h2 id="4-事件模块"><a href="#4-事件模块" class="headerlink" title="4.事件模块"></a>4.事件模块</h2><h4 id="绑定事件"><a href="#绑定事件" class="headerlink" title="绑定事件"></a>绑定事件</h4><ul>
-<li><code>eventName(function()&#123;&#125;)</code>: 绑定对应事件名的监听,编码方便, 但只能加一个监听, 且有的事件监听不支持</li>
-<li><code>on(&#39;eventName&#39;, function()&#123;&#125;)</code> : 通用的绑定事件监听,编码不方便, 可以添加多个监听, 且更通用</li>
-<li>常用: <code>click</code>, <code>mouseenter/mouseleave</code> <code>mouseover/mouseout</code> <code>focus/blur</code></li>
-<li><code>hover(function()&#123;&#125;, function()&#123;&#125;)</code></li>
-</ul>
-<h4 id="解绑事件"><a href="#解绑事件" class="headerlink" title="解绑事件"></a>解绑事件</h4><ul>
-<li><code>off(&#39;eventName&#39;)</code></li>
-</ul>
-<h4 id="事件委托"><a href="#事件委托" class="headerlink" title="事件委托"></a>事件委托</h4><ul>
-<li>理解: 将子元素的事件委托给父辈元素处理<ul>
-<li>事件监听绑定在父元素上, 但事件发生在子元素上</li>
-<li>　事件会冒泡到父元素</li>
-<li>但最终调用的事件回调函数的是子元素: event.target</li>
-</ul>
-</li>
-<li>好处<ul>
-<li>新增的元素没有事件监听</li>
-<li>减少监听的数量(n==&gt;1)</li>
-</ul>
-</li>
-<li>编码<ul>
-<li><code>on(&#39;eventName&#39;, selector, function(event)&#123;&#125;)</code> // 回调函数中的this是子元素</li>
-<li><code>off(&#39;eventName&#39;)</code></li>
-</ul>
-</li>
-</ul>
-<h4 id="事件坐标"><a href="#事件坐标" class="headerlink" title="事件坐标"></a>事件坐标</h4><ul>
-<li><code>event.offsetX</code>: 原点是当前元素左上角</li>
-<li><code>event.clientX</code>: 原点是窗口左上角</li>
-<li><code>event.pageX</code>: 原点是页面左上角</li>
-</ul>
-<h4 id="事件相关"><a href="#事件相关" class="headerlink" title="事件相关"></a>事件相关</h4><ul>
-<li>停止事件冒泡: <code>event.stopPropagation()</code></li>
-<li>阻止事件的默认行为: <code>event.preventDefault()</code></li>
-</ul>
-<h2 id="5-动画效果"><a href="#5-动画效果" class="headerlink" title="5.动画效果"></a>5.动画效果</h2><blockquote>
-<p>在一定的时间内, 不断改变元素样式</p>
+<p><img src="https://s1.ax1x.com/2020/10/14/0IAoP1.png" srcset="/img/loading.gif" alt="0IAoP1.png">  </p>
+<h3 id="推荐歌单页面"><a href="#推荐歌单页面" class="headerlink" title="推荐歌单页面"></a>推荐歌单页面</h3><blockquote>
+<p>头部为精品歌单，主体部分为推荐歌单，且可根据类型切换推荐（默认为全部）</p>
 </blockquote>
-<ul>
-<li><code>slideDown()/slideUp()/slideToggle()</code>    : 滑动动画:不断改变元素的高度</li>
-<li><code>fadeOut()/fadeIn()/fadeToggle()</code>    : 淡入淡出: 不断改变元素的透明度(opaticy)</li>
-<li><code>show()/hide()/toggle()</code>    : 显示隐藏</li>
-<li><code>animate(&#123;结束时的样式&#125;, time, fun)</code></li>
-<li><code>stop()</code>    : 停止动画</li>
-</ul>
-<h2 id="6-插件机制"><a href="#6-插件机制" class="headerlink" title="6.插件机制"></a>6.插件机制</h2><ul>
-<li><p>扩展jQuery函数对象的方法</p>
-<pre><code class="hljs js">$.extend(&#123;
-	xxx: fuction()&#123;&#125; <span class="hljs-comment">// this是$</span>
-&#125;)
-$.xxx()</code></pre>
-</li>
-<li><p>扩展jQuery对象的方法</p>
-<pre><code class="hljs js">$.fn.extend(&#123;
-	xxx: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>&#123;&#125;  <span class="hljs-comment">// this是jQuery对象</span>
-&#125;)
-$obj.xxx()</code></pre></li>
-</ul>
+<p><img src="https://s1.ax1x.com/2020/10/14/0IAOqe.png" srcset="/img/loading.gif" alt="0IAOqe.png">  </p>
+<h3 id="最新音乐页面"><a href="#最新音乐页面" class="headerlink" title="最新音乐页面"></a>最新音乐页面</h3><blockquote>
+<p>根据分类罗列50首最新音乐</p>
+</blockquote>
+<p><img src="https://s1.ax1x.com/2020/10/14/0IALrD.png" srcset="/img/loading.gif" alt="0IALrD.png">  </p>
+<h3 id="最新mv页面"><a href="#最新mv页面" class="headerlink" title="最新mv页面"></a>最新mv页面</h3><blockquote>
+<p>根据类型切换显示当前最新mv</p>
+</blockquote>
+<p><img src="https://s1.ax1x.com/2020/10/14/0IAT8x.png" srcset="/img/loading.gif" alt="0IAT8x.png">  </p>
+<h3 id="搜索页面"><a href="#搜索页面" class="headerlink" title="搜索页面"></a>搜索页面</h3><blockquote>
+<p>根据搜索框输入内容，显示搜索结果（单曲、歌单和mv）  </p>
+</blockquote>
+<p><img src="https://s1.ax1x.com/2020/10/14/0IAHxK.png" srcset="/img/loading.gif" alt="0IAHxK.png">  </p>
+<h3 id="歌单详情页面"><a href="#歌单详情页面" class="headerlink" title="歌单详情页面"></a>歌单详情页面</h3><blockquote>
+<p>点击歌单，进入详情页面，显示歌单详细信息</p>
+</blockquote>
+<p><img src="https://s1.ax1x.com/2020/10/14/0IA4a9.png" srcset="/img/loading.gif" alt="0IA4a9.png">  </p>
+<h3 id="歌单评论页面"><a href="#歌单评论页面" class="headerlink" title="歌单评论页面"></a>歌单评论页面</h3><blockquote>
+<p>分别显示该歌单最热评论与最新评论</p>
+</blockquote>
+<p><img src="https://s1.ax1x.com/2020/10/14/0IAhVJ.png" srcset="/img/loading.gif" alt="0IAhVJ.png">  </p>
+<h3 id="mv详情页面"><a href="#mv详情页面" class="headerlink" title="mv详情页面"></a>mv详情页面</h3><blockquote>
+<p>可播放mv视频，显示mv详细信息、相关推荐及评论</p>
+</blockquote>
+<p><img src="https://s1.ax1x.com/2020/10/14/0IA55R.png" srcset="/img/loading.gif" alt="0IA55R.png">  </p>
 
             </div>
             <hr>
@@ -351,7 +280,7 @@ $obj.xxx()</code></pre></li>
                   <div class="post-meta">
                     <i class="iconfont icon-tags"></i>
                     
-                      <a class="hover-with-bg" href="/tags/jq/">jq</a>
+                      <a class="hover-with-bg" href="/tags/vue/">vue</a>
                     
                   </div>
                 
@@ -364,18 +293,12 @@ $obj.xxx()</code></pre></li>
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2020/10/15/%E4%BB%BF%E7%BD%91%E6%98%93%E4%BA%91%E6%92%AD%E6%94%BE%E5%99%A8-vue/">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">仿网易云播放器_vue</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2020/09/21/jQuery%E7%AC%94%E8%AE%B0%E4%B8%80-jq/">
-                        <span class="hidden-mobile">jQuery笔记一_jq</span>
+                      <a href="/2020/09/23/jQuery%E7%AC%94%E8%AE%B0%E4%BA%8C-jq/">
+                        <span class="hidden-mobile">jQuery笔记二_jq</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
@@ -581,7 +504,7 @@ $obj.xxx()</code></pre></li>
     var typed = new Typed('#subtitle', {
       strings: [
         '  ',
-        "jQuery笔记二_jq&nbsp;",
+        "仿网易云播放器_vue&nbsp;",
       ],
       cursorChar: "_",
       typeSpeed: 70,
