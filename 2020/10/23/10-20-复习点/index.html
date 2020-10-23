@@ -17,7 +17,7 @@
   <meta name="description" content="">
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
-  <title>仿网易云播放器_vue - Young</title>
+  <title>10-20 复习点 - Young</title>
 
   <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
 
@@ -172,8 +172,8 @@
               
   <div class="mt-3 post-meta">
     <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-    <time datetime="2020-10-15 09:45" pubdate>
-      2020年10月15日 上午
+    <time datetime="2020-10-23 17:47" pubdate>
+      2020年10月23日 下午
     </time>
   </div>
 
@@ -183,7 +183,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      257 字
+      912 字
     </span>
   
 
@@ -193,7 +193,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      2
+      11
        分钟
     </span>
   
@@ -223,66 +223,193 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto" id="post">
             <!-- SEO header -->
-            <h1 style="display: none">仿网易云播放器_vue</h1>
+            <h1 style="display: none">10-20 复习点</h1>
             
               <p class="note note-info">
                 
-                  本文最后更新于：2020年10月15日 上午
+                  本文最后更新于：2020年10月23日 下午
                 
               </p>
             
             <div class="markdown-body" id="post-body">
-              <h1 id="仿网易云音乐播放器"><a href="#仿网易云音乐播放器" class="headerlink" title="仿网易云音乐播放器"></a>仿网易云音乐播放器</h1><p>本项目使用VSCode工具编码。是一个vue框架的练手项目，该项目中使用到了vue-router、element-ui、vue-cli及axios等相关技术。  </p>
-<h2 id="项目展示与说明"><a href="#项目展示与说明" class="headerlink" title="项目展示与说明"></a>项目展示与说明</h2><h3 id="文件结构"><a href="#文件结构" class="headerlink" title="文件结构"></a>文件结构</h3><blockquote>
-<p>components文件下为主组件，view下是各页面视图组件  </p>
-</blockquote>
-<img src="https://s1.ax1x.com/2020/10/14/0IVHBD.png" srcset="/img/loading.gif" width="50%" height="50%">  
+              <ul>
+<li><p><strong>ES6新特性</strong></p>
+<ul>
+<li>新增let和const声明变量，实现了块级作用域</li>
+<li>新增箭头函数</li>
+<li>新增了模块化机制</li>
+<li>引入promise解决异步回调问题</li>
+<li>引入Class作为对象的模板，实现更好的面向对象编程</li>
+<li>引入新的数据类型symbol，新的数据结构set和map</li>
+</ul>
+</li>
+<li><p><strong>闭包</strong></p>
+</li>
+<li><p><strong>Promise</strong></p>
+</li>
+<li><p><strong>class类</strong></p>
+</li>
+<li><p><strong>原生语法实现继承</strong></p>
+</li>
+<li><p><strong>数组的方法及遍历方法 …</strong></p>
+<ul>
+<li><p>push()：添加元素到数组末尾，返回新的长度</p>
+</li>
+<li><p>pop()：删除数组末尾元素，返回被删除的元素</p>
+</li>
+<li><p>unshift()：添加元素到数组的头部，返回新的长度</p>
+</li>
+<li><p>shift()：删除数组开头元素，返回被删除的元素</p>
+</li>
+<li><p>indexOf()：查看某个元素在数组中的位置</p>
+</li>
+<li><p>splice(start, num, value)：实现增删改操作（start开始下标，num删除元素个数，value插入或替换的元素）</p>
+</li>
+<li><p>slice(start, end)：浅拷贝数组并返回拷贝后的新数组</p>
+</li>
+<li><p>concat()：连接数组，不对原数组产生影响</p>
+</li>
+<li><p>join()：将数组转换为字符串，不对原数组产生影响</p>
+</li>
+<li><p>reverse()：反转数组，直接修改原数组</p>
+</li>
+<li><p>sort()：对数组中元素排序</p>
+<pre><code class="hljs javascript">arr.sort(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">a,b</span>)</span>&#123;
+	<span class="hljs-keyword">return</span> a-b;    <span class="hljs-comment">//升序排列</span>
+&#125;);</code></pre>
 
-<h3 id="发现音乐页面"><a href="#发现音乐页面" class="headerlink" title="发现音乐页面"></a>发现音乐页面</h3><blockquote>
-<p>主页面</p>
+
+
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p><strong>深拷贝与浅拷贝</strong></p>
+<ul>
+<li><p>浅拷贝：只是拷贝一层，更深层次对象级别的只拷贝引用</p>
+<pre><code class="hljs javascript"><span class="hljs-keyword">for</span>(<span class="hljs-keyword">var</span> k <span class="hljs-keyword">in</span> obj2)&#123;
+	<span class="hljs-comment">// k 是属性名 obj2[k] 是属性值</span>
+	obj1[k] = obj2[k];
+&#125;
+
+<span class="hljs-built_in">Object</span>.assign(obj1,obj2);   <span class="hljs-comment">// ES6中的语法糖</span></code></pre>
+</li>
+<li><p>深拷贝：深拷贝拷贝多层，每一级别的数据都会拷贝</p>
+<pre><code class="hljs javascript"><span class="hljs-comment">// 封装深拷贝函数</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">deepCopy</span> (<span class="hljs-params">newobj, oldobj</span>) </span>&#123;
+	<span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> k <span class="hljs-keyword">in</span> oldobj) &#123;
+        <span class="hljs-keyword">let</span> item = oldobj[k];
+    	<span class="hljs-comment">// 数组    </span>
+		<span class="hljs-keyword">if</span> (item <span class="hljs-keyword">instanceof</span> <span class="hljs-built_in">Array</span>) &#123;
+            newobj[k] = [];
+            deepCopy(newobj[k], item);
+        &#125;
+    	<span class="hljs-comment">// 对象    </span>
+        <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (item <span class="hljs-keyword">instanceof</span> <span class="hljs-built_in">Object</span>) &#123;
+            newobj[k] = &#123;&#125;;
+            deepCopy(newobj[k], item);
+        &#125;
+        <span class="hljs-comment">// 基本数据类型</span>
+        <span class="hljs-keyword">else</span> &#123;
+            newobj[k] = item;
+        &#125;
+	&#125;
+&#125;</code></pre>
+
+
+
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p><strong>判断类型的方法</strong></p>
+<ul>
+<li>typeof：返回类型</li>
+<li>A instanceof B：可以判断A是不是B的实例，返回一个布尔值，由构造类型判断出数据类型</li>
+</ul>
+</li>
+<li><p><strong>改变this的方法</strong></p>
+<blockquote>
+<p>call和apply作用：改变this的指向；借用别的对象的方法；调用函数</p>
 </blockquote>
-<p><img src="https://s1.ax1x.com/2020/10/14/0IAoP1.png" srcset="/img/loading.gif" alt="0IAoP1.png">  </p>
-<h3 id="推荐歌单页面"><a href="#推荐歌单页面" class="headerlink" title="推荐歌单页面"></a>推荐歌单页面</h3><blockquote>
-<p>头部为精品歌单，主体部分为推荐歌单，且可根据类型切换推荐（默认为全部）</p>
-</blockquote>
-<p><img src="https://s1.ax1x.com/2020/10/14/0IAOqe.png" srcset="/img/loading.gif" alt="0IAOqe.png">  </p>
-<h3 id="最新音乐页面"><a href="#最新音乐页面" class="headerlink" title="最新音乐页面"></a>最新音乐页面</h3><blockquote>
-<p>根据分类罗列50首最新音乐</p>
-</blockquote>
-<p><img src="https://s1.ax1x.com/2020/10/14/0IALrD.png" srcset="/img/loading.gif" alt="0IALrD.png">  </p>
-<h3 id="最新mv页面"><a href="#最新mv页面" class="headerlink" title="最新mv页面"></a>最新mv页面</h3><blockquote>
-<p>根据类型切换显示当前最新mv</p>
-</blockquote>
-<p><img src="https://s1.ax1x.com/2020/10/14/0IAT8x.png" srcset="/img/loading.gif" alt="0IAT8x.png">  </p>
-<h3 id="搜索页面"><a href="#搜索页面" class="headerlink" title="搜索页面"></a>搜索页面</h3><blockquote>
-<p>根据搜索框输入内容，显示搜索结果（单曲、歌单和mv）  </p>
-</blockquote>
-<p><img src="https://s1.ax1x.com/2020/10/14/0IAHxK.png" srcset="/img/loading.gif" alt="0IAHxK.png">  </p>
-<h3 id="歌单详情页面"><a href="#歌单详情页面" class="headerlink" title="歌单详情页面"></a>歌单详情页面</h3><blockquote>
-<p>点击歌单，进入详情页面，显示歌单详细信息</p>
-</blockquote>
-<p><img src="https://s1.ax1x.com/2020/10/14/0IA4a9.png" srcset="/img/loading.gif" alt="0IA4a9.png">  </p>
-<h3 id="歌单评论页面"><a href="#歌单评论页面" class="headerlink" title="歌单评论页面"></a>歌单评论页面</h3><blockquote>
-<p>分别显示该歌单最热评论与最新评论</p>
-</blockquote>
-<p><img src="https://s1.ax1x.com/2020/10/14/0IAhVJ.png" srcset="/img/loading.gif" alt="0IAhVJ.png">  </p>
-<h3 id="mv详情页面"><a href="#mv详情页面" class="headerlink" title="mv详情页面"></a>mv详情页面</h3><blockquote>
-<p>可播放mv视频，显示mv详细信息、相关推荐及评论</p>
-</blockquote>
-<p><img src="https://s1.ax1x.com/2020/10/14/0IA55R.png" srcset="/img/loading.gif" alt="0IA55R.png">  </p>
+<ul>
+<li>call()：第一个参数为改变指向的对象，之后的参数为arg1,arg2…形式传入，函数立即执行</li>
+<li>apply()：第一个参数为改变指向的对象，之后的参数为[arg1,arg2…]数组的形式传入，函数立即执行</li>
+<li>bind()：返回一个新的函数，函数不会立即执行</li>
+</ul>
+</li>
+<li><p><strong>面向对象的特性</strong></p>
+<ul>
+<li>封装性：将代码抽离，将对象运行所需的资源封装在程序对象中，例如：类是封装对象的属性和行为；方法是封装具体的逻辑功能。</li>
+<li>继承性：继承可以使得子类具有父类的各种公共属性和资源，而不需要再次编写相同的代码。</li>
+<li>多态性：允许子类 ‘重构’ 和 ‘重写’</li>
+</ul>
+</li>
+<li><p><strong>v-model功能实现</strong></p>
+<pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span> = <span class="hljs-string">&#x27;text&#x27;</span> <span class="hljs-attr">:value</span> = <span class="hljs-string">&#x27;message&#x27;</span> @<span class="hljs-attr">input</span> = <span class="hljs-string">&#x27;message = $event.target.value&#x27;</span>&gt;</span></code></pre>
+
+
+
+</li>
+</ul>
+<ul>
+<li><p><strong>flex布局及垂直居中</strong></p>
+<pre><code class="hljs css">1.定位 + <span class="hljs-selector-tag">margin</span>
+<span class="hljs-selector-class">.div</span> &#123;
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">100px</span>;
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">100px</span>;
+    <span class="hljs-attribute">position</span>: absolute;
+    <span class="hljs-attribute">left</span>: <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">top</span>: <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">right</span>: <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">bottom</span>: <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">margin</span>: auto;
+&#125;
+
+2<span class="hljs-selector-class">.transform</span>方案
+<span class="hljs-selector-class">.div</span> &#123;
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">100px</span>;
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">100px</span>;
+    <span class="hljs-attribute">position</span>: absolute;
+    <span class="hljs-attribute">left</span>: <span class="hljs-number">50%</span>;
+    <span class="hljs-attribute">top</span>: <span class="hljs-number">50%</span>;
+    <span class="hljs-attribute">transform</span>: <span class="hljs-built_in">translate</span>(-<span class="hljs-number">50%</span>, -<span class="hljs-number">50%</span>);
+&#125;
+
+3<span class="hljs-selector-class">.flex</span>布局
+<span class="hljs-selector-class">.box</span> &#123;
+    <span class="hljs-attribute">display</span>: flex;
+    <span class="hljs-attribute">justify-content</span>: center;
+    <span class="hljs-attribute">align-item</span>: center;
+&#125;
+
+4<span class="hljs-selector-class">.display</span>: <span class="hljs-selector-tag">table-cell</span> 无兼容性问题
+<span class="hljs-selector-class">.box</span> &#123;
+	<span class="hljs-attribute">position</span>: relative;
+	<span class="hljs-attribute">width</span>: <span class="hljs-number">300px</span>;
+	<span class="hljs-attribute">height</span>: <span class="hljs-number">300px</span>;
+	<span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid red;
+	<span class="hljs-attribute">display</span>: table-cell;	
+	<span class="hljs-attribute">text-align</span>: center;	
+	<span class="hljs-attribute">vertical-align</span>: middle;
+&#125;</code></pre>
+</li>
+<li><p><strong>元素隐藏的方法</strong></p>
+<ul>
+<li>display: none    真正意义上的隐藏，模型消失且不占据空间，类似于删除；</li>
+<li>visibility:  hidden    元素隐藏，占据空间，不会触发事件</li>
+<li>opacity： 0          透明度为0，不显示，占据空间，会触发事件</li>
+</ul>
+</li>
+</ul>
 
             </div>
             <hr>
             <div>
               <div class="post-metas mb-3">
                 
-                
-                  <div class="post-meta">
-                    <i class="iconfont icon-tags"></i>
-                    
-                      <a class="hover-with-bg" href="/tags/vue/">vue</a>
-                    
-                  </div>
                 
               </div>
               
@@ -293,9 +420,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2020/10/23/10-19-%E5%A4%8D%E4%B9%A0%E7%82%B9/">
+                      <a href="/2020/10/23/10-21-%E5%A4%8D%E4%B9%A0%E7%82%B9/">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">10-19 复习点</span>
+                        <span class="hidden-mobile">10-21 复习点</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -303,8 +430,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2020/09/23/jQuery%E7%AC%94%E8%AE%B0%E4%BA%8C-jq/">
-                        <span class="hidden-mobile">jQuery笔记二_jq</span>
+                      <a href="/2020/10/23/10-19-%E5%A4%8D%E4%B9%A0%E7%82%B9/">
+                        <span class="hidden-mobile">10-19 复习点</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
@@ -510,7 +637,7 @@
     var typed = new Typed('#subtitle', {
       strings: [
         '  ',
-        "仿网易云播放器_vue&nbsp;",
+        "10-20 复习点&nbsp;",
       ],
       cursorChar: "_",
       typeSpeed: 70,

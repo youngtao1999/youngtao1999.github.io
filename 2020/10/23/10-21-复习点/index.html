@@ -17,7 +17,7 @@
   <meta name="description" content="">
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
-  <title>仿网易云播放器_vue - Young</title>
+  <title>10-21 复习点 - Young</title>
 
   <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
 
@@ -172,8 +172,8 @@
               
   <div class="mt-3 post-meta">
     <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-    <time datetime="2020-10-15 09:45" pubdate>
-      2020年10月15日 上午
+    <time datetime="2020-10-23 17:48" pubdate>
+      2020年10月23日 下午
     </time>
   </div>
 
@@ -183,7 +183,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      257 字
+      798 字
     </span>
   
 
@@ -193,7 +193,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      2
+      10
        分钟
     </span>
   
@@ -223,66 +223,129 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto" id="post">
             <!-- SEO header -->
-            <h1 style="display: none">仿网易云播放器_vue</h1>
+            <h1 style="display: none">10-21 复习点</h1>
             
               <p class="note note-info">
                 
-                  本文最后更新于：2020年10月15日 上午
+                  本文最后更新于：2020年10月23日 下午
                 
               </p>
             
             <div class="markdown-body" id="post-body">
-              <h1 id="仿网易云音乐播放器"><a href="#仿网易云音乐播放器" class="headerlink" title="仿网易云音乐播放器"></a>仿网易云音乐播放器</h1><p>本项目使用VSCode工具编码。是一个vue框架的练手项目，该项目中使用到了vue-router、element-ui、vue-cli及axios等相关技术。  </p>
-<h2 id="项目展示与说明"><a href="#项目展示与说明" class="headerlink" title="项目展示与说明"></a>项目展示与说明</h2><h3 id="文件结构"><a href="#文件结构" class="headerlink" title="文件结构"></a>文件结构</h3><blockquote>
-<p>components文件下为主组件，view下是各页面视图组件  </p>
+              <ul>
+<li><p><strong>HTTP 协议</strong></p>
+<ul>
+<li>超文本传输协议：从万维网服务器传输超文本到本地浏览器的传送协议</li>
+<li>HTTP基于TCP/IP通信协议来传递数据(HTML文件、图片文件、查询结果等)</li>
+</ul>
+</li>
+<li><p><strong>flex布局</strong></p>
+<blockquote>
+<p>容器的属性</p>
 </blockquote>
-<img src="https://s1.ax1x.com/2020/10/14/0IVHBD.png" srcset="/img/loading.gif" width="50%" height="50%">  
+<ul>
+<li><p>flex-direction：决定主轴的方向，默认为 row (水平)</p>
+<pre><code class="hljs css"><span class="hljs-selector-class">.box</span> &#123;
+    <span class="hljs-attribute">flex-direction</span>: row | row-reverse | column | column-reverse
+&#125;
 
-<h3 id="发现音乐页面"><a href="#发现音乐页面" class="headerlink" title="发现音乐页面"></a>发现音乐页面</h3><blockquote>
-<p>主页面</p>
+<span class="hljs-selector-tag">row</span>（默认值）：主轴为水平方向，起点在左端。
+<span class="hljs-selector-tag">row-reverse</span>：主轴为水平方向，起点在右端。
+<span class="hljs-selector-tag">column</span>：主轴为垂直方向，起点在上沿。
+<span class="hljs-selector-tag">column-reverse</span>：主轴为垂直方向，起点在下沿。</code></pre>
+</li>
+<li><p>flex-wrap：定义一条轴线不下，如何换行</p>
+<pre><code class="hljs css"><span class="hljs-selector-class">.box</span> &#123;
+    <span class="hljs-attribute">flex-wrap</span>: nowrap | wrap | wrap-reverse
+&#125;
+
+<span class="hljs-selector-tag">nowrap</span>（默认值）：不换行
+<span class="hljs-selector-tag">wrap</span>：换行
+<span class="hljs-selector-tag">wrap-reverse</span>：换行，第一行在下方</code></pre>
+</li>
+<li><p>flex-flow：是 flex-direction 属性和 flex-wrap 属性的简写形式，默认值为 row nowrap </p>
+<pre><code class="hljs css"><span class="hljs-selector-class">.box</span> &#123;
+	<span class="hljs-attribute">flex-flow</span>: &lt;flex-direction&gt; || &lt;flex-wrap&gt;
+&#125;</code></pre>
+</li>
+<li><p>justify-content：项目在主轴上的对齐方式</p>
+<pre><code class="hljs css"><span class="hljs-selector-class">.box</span> &#123;
+	<span class="hljs-attribute">justify-content</span>: flex-start | flex-end | center | space-between | space-around
+&#125;
+
+<span class="hljs-selector-tag">flex-start</span>（默认值）：左对齐
+<span class="hljs-selector-tag">flex-end</span>：右对齐
+<span class="hljs-selector-tag">center</span>： 居中
+<span class="hljs-selector-tag">space-between</span>：两端对齐，项目之间的间隔都相等。
+<span class="hljs-selector-tag">space-around</span>：每个项目两侧的间隔相等。所以，项目之间的间隔比项目与边框的间隔大一倍。</code></pre>
+</li>
+<li><p>align-items：项目在交叉轴上如何对齐</p>
+<pre><code class="hljs css"><span class="hljs-selector-class">.box</span> &#123;
+  <span class="hljs-attribute">align-items</span>: flex-start | flex-end | center | baseline | stretch;
+&#125;
+
+<span class="hljs-selector-tag">flex-start</span>：交叉轴的起点对齐。
+<span class="hljs-selector-tag">flex-end</span>：交叉轴的终点对齐。
+<span class="hljs-selector-tag">center</span>：交叉轴的中点对齐。
+<span class="hljs-selector-tag">baseline</span>: 项目的第一行文字的基线对齐。
+<span class="hljs-selector-tag">stretch</span>（默认值）：如果项目未设置高度或设为<span class="hljs-selector-tag">auto</span>，将占满整个容器的高度。</code></pre>
+
+</li>
+</ul>
+<blockquote>
+<p>项目的属性</p>
 </blockquote>
-<p><img src="https://s1.ax1x.com/2020/10/14/0IAoP1.png" srcset="/img/loading.gif" alt="0IAoP1.png">  </p>
-<h3 id="推荐歌单页面"><a href="#推荐歌单页面" class="headerlink" title="推荐歌单页面"></a>推荐歌单页面</h3><blockquote>
-<p>头部为精品歌单，主体部分为推荐歌单，且可根据类型切换推荐（默认为全部）</p>
-</blockquote>
-<p><img src="https://s1.ax1x.com/2020/10/14/0IAOqe.png" srcset="/img/loading.gif" alt="0IAOqe.png">  </p>
-<h3 id="最新音乐页面"><a href="#最新音乐页面" class="headerlink" title="最新音乐页面"></a>最新音乐页面</h3><blockquote>
-<p>根据分类罗列50首最新音乐</p>
-</blockquote>
-<p><img src="https://s1.ax1x.com/2020/10/14/0IALrD.png" srcset="/img/loading.gif" alt="0IALrD.png">  </p>
-<h3 id="最新mv页面"><a href="#最新mv页面" class="headerlink" title="最新mv页面"></a>最新mv页面</h3><blockquote>
-<p>根据类型切换显示当前最新mv</p>
-</blockquote>
-<p><img src="https://s1.ax1x.com/2020/10/14/0IAT8x.png" srcset="/img/loading.gif" alt="0IAT8x.png">  </p>
-<h3 id="搜索页面"><a href="#搜索页面" class="headerlink" title="搜索页面"></a>搜索页面</h3><blockquote>
-<p>根据搜索框输入内容，显示搜索结果（单曲、歌单和mv）  </p>
-</blockquote>
-<p><img src="https://s1.ax1x.com/2020/10/14/0IAHxK.png" srcset="/img/loading.gif" alt="0IAHxK.png">  </p>
-<h3 id="歌单详情页面"><a href="#歌单详情页面" class="headerlink" title="歌单详情页面"></a>歌单详情页面</h3><blockquote>
-<p>点击歌单，进入详情页面，显示歌单详细信息</p>
-</blockquote>
-<p><img src="https://s1.ax1x.com/2020/10/14/0IA4a9.png" srcset="/img/loading.gif" alt="0IA4a9.png">  </p>
-<h3 id="歌单评论页面"><a href="#歌单评论页面" class="headerlink" title="歌单评论页面"></a>歌单评论页面</h3><blockquote>
-<p>分别显示该歌单最热评论与最新评论</p>
-</blockquote>
-<p><img src="https://s1.ax1x.com/2020/10/14/0IAhVJ.png" srcset="/img/loading.gif" alt="0IAhVJ.png">  </p>
-<h3 id="mv详情页面"><a href="#mv详情页面" class="headerlink" title="mv详情页面"></a>mv详情页面</h3><blockquote>
-<p>可播放mv视频，显示mv详细信息、相关推荐及评论</p>
-</blockquote>
-<p><img src="https://s1.ax1x.com/2020/10/14/0IA55R.png" srcset="/img/loading.gif" alt="0IA55R.png">  </p>
+<ul>
+<li><p>order：定义项目的排列顺序。数值越小，排列越靠前，默认为0。</p>
+<pre><code class="hljs css"><span class="hljs-selector-class">.item</span> &#123;
+  <span class="hljs-attribute">order</span>: &lt;integer&gt;;
+&#125;</code></pre>
+</li>
+<li><p>flex-grow：定义项目的放大比例，默认为 0，即如果存在剩余空间，也不放大。</p>
+<pre><code class="hljs css"><span class="hljs-selector-class">.item</span> &#123;
+  <span class="hljs-attribute">flex-grow</span>: &lt;number&gt;; <span class="hljs-comment">/* default 0 */</span>
+&#125;</code></pre>
+</li>
+<li><p>flex-shrink：定义了项目的缩小比例，默认为 1，即如果空间不足，该项目将缩小。</p>
+<pre><code class="hljs css"><span class="hljs-selector-class">.item</span> &#123;
+  <span class="hljs-attribute">flex-shrink</span>: &lt;number&gt;; <span class="hljs-comment">/* default 1 */</span>
+&#125;</code></pre>
+</li>
+<li><p>flex-basis：定义了在分配多余空间之前，项目占据的主轴空间（main size）。浏览器根据这个属性，计算主轴是否有多余空间。它的默认值为 auto，即项目的本来大小。</p>
+<pre><code class="hljs css"><span class="hljs-selector-class">.item</span> &#123;
+  <span class="hljs-attribute">flex-basis</span>: &lt;length&gt; | auto; <span class="hljs-comment">/* default auto */</span>
+&#125;</code></pre>
+
+<p>它可以设为跟<code>width</code>或<code>height</code>属性一样的值（比如350px），则项目将占据固定空间。</p>
+</li>
+<li><p>flex：是 flex-grow,  flex-shrink 和 flex-basis的简写，默认值为 0 1 auto。后两个属性可选。</p>
+<pre><code class="hljs css"><span class="hljs-selector-class">.item</span> &#123;
+  <span class="hljs-attribute">flex</span>: none | [ &lt;<span class="hljs-string">&#x27;flex-grow&#x27;</span>&gt; &lt;<span class="hljs-string">&#x27;flex-shrink&#x27;</span>&gt;? || &lt;<span class="hljs-string">&#x27;flex-basis&#x27;</span>&gt; ]
+&#125;</code></pre>
+
+<p>该属性有两个快捷值：auto (1 1 auto) 和 none (0 0 auto)。</p>
+<p>建议优先使用这个属性，而不是单独写三个分离的属性，因为浏览器会推算相关值。</p>
+</li>
+<li><p>align-self：允许单个项目有与其他项目不一样的对齐方式，可覆盖 align-items 属性。默认值为 auto，表示继承父元素的 align-items 属性，如果没有父元素，则等同于 stretch。</p>
+<pre><code class="hljs css"><span class="hljs-selector-class">.item</span> &#123;
+  <span class="hljs-attribute">align-self</span>: auto | flex-start | flex-end | center | baseline | stretch;
+&#125;</code></pre>
+
+
+
+
+
+
+</li>
+</ul>
+</li>
+</ul>
 
             </div>
             <hr>
             <div>
               <div class="post-metas mb-3">
                 
-                
-                  <div class="post-meta">
-                    <i class="iconfont icon-tags"></i>
-                    
-                      <a class="hover-with-bg" href="/tags/vue/">vue</a>
-                    
-                  </div>
                 
               </div>
               
@@ -293,18 +356,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2020/10/23/10-19-%E5%A4%8D%E4%B9%A0%E7%82%B9/">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">10-19 复习点</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2020/09/23/jQuery%E7%AC%94%E8%AE%B0%E4%BA%8C-jq/">
-                        <span class="hidden-mobile">jQuery笔记二_jq</span>
+                      <a href="/2020/10/23/10-20-%E5%A4%8D%E4%B9%A0%E7%82%B9/">
+                        <span class="hidden-mobile">10-20 复习点</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
@@ -510,7 +567,7 @@
     var typed = new Typed('#subtitle', {
       strings: [
         '  ',
-        "仿网易云播放器_vue&nbsp;",
+        "10-21 复习点&nbsp;",
       ],
       cursorChar: "_",
       typeSpeed: 70,
